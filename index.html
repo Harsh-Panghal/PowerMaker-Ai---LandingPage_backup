@@ -31,7 +31,9 @@
           },
         },
       }
+
     </script>
+    
     
     <!-- Custom CSS for Tailwind -->
     <style type="text/tailwindcss">
@@ -95,16 +97,16 @@
           <a href="#blog" class="font-[510] text-[15px] text-[#81817C]">Blog</a>
         </li>
         <li>
-          <a href="#contact-us" class="font-[510] text-[15px] text-[#81817C]"
+          <a href="#contactUs" class="font-[510] text-[15px] text-[#81817C]"
             >Contact Us</a
           >
         </li>
       </ul>
-        <button
-          class="text-[15px] font-[500] text-[#FFFFFF] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#0E5185] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer"
-        >
-          Request Demo
-        </button>
+      <button
+        class="text-[15px] font-[500] text-[#FFFFFF] bg-[#0E5185] rounded-[12px] md:!inline-block w-[153px] h-[47px] cursor-pointer hidden hover:scale-[0.99] transition-all duration-200 ease-out hover:bg-[#051F3D]"
+      >
+        Request Demo
+      </button>
     </nav>
     <!-- hero-section -->
     <div
@@ -149,12 +151,12 @@
         class="req-contact-btn-card flex gap-2.5 max-w-[305.19px] md:w-[346px] md:max-w-[346px] justify-between mt-[-40px] md:mt-0"
       >
         <button
-          class="text-[15px] font-[500] text-[#FFFFFF] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#0E5185] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer"
+          class="text-[15px] font-[500] text-[#FFFFFF] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#0E5185] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer hover:bg-[#051F3D] hover:scale-[0.99] transition-all duration-200 ease-out"
         >
           Request Demo
         </button>
         <button
-          class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer border border-[#0E5185]"
+          class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer border border-[#0E5185] hover:bg-sky-50 hover:border-sky-50"
         >
           Contact Us
         </button>
@@ -393,7 +395,7 @@
     </div>
     <!-- key Features -->
     <div
-      class="key-features rounded-sm bg-[#FFFFFF] border border-[#F5F7FA] mt-[31px] md:mt-[70px] max-w-[1320px] md:mx-auto scroll-animate"
+      class="key-features rounded-sm bg-[#FFFFFF] border border-[#F5F7FA] mt-[31px] md:mt-[70px] max-w-[1320px] md:mx-auto scroll-animate relative"
     >
       <h2
         class="text-[24px] md:text-[35px] text-center md:text-start font-[500] text-[#082343] w-full md:w-[903px] md:max-w-[903px] h-[50px] py-[7px] md:py-0 md:min-h-[60px] md:!px-[147px] md:!bg-gradient-to-r md:!from-[#1FA2D0] md:!to-[#1FA2D000] mt-[32px]"
@@ -407,15 +409,16 @@
         class="grid-box mt-[32px] md:mx-[147px] md:w-[1025px] md:max-w-[1025px] grid md:[grid-template-rows:repeat(3,_270px)] md:[grid-template-columns:repeat(3,_303px)] md:gap-y-[26px] md:gap-x-[59px] [grid-template-columns:repeat(2,_169px)] [grid-template-rows:repeat(4,215px)] gap-x-6 gap-y-4 ml-[30px] mr-[30px] md:mb-[91px]"
       >
         <div
-          class=" bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class=" bg-[#FFFFFF] hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out
+          !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2"
+            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-1.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-bounce group-hover:"
             />
             <h3
               class="w-fit text-[16px] md:w-[220px] md:max-w-[220px]  md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -432,15 +435,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2"
+            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-2.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:max-w-[211px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -457,15 +460,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2"
+            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-3.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-spin"
             />
             <h3
               class="w-fit text-[16px] md:max-w-[196px] md:text-[22px] font-[500] text-[#082343] leading-[120%] text-center"
@@ -482,15 +485,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-7 gap-2"
+            class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-4.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-bounce"
             />
             <h3
               class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -507,15 +510,15 @@
         </div>
 
         <div
-          class="hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2"
+            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-5.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:max-w-[278px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -532,15 +535,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-7 gap-2"
+            class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-6.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-spin"
             />
             <h3
               class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -557,15 +560,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class=" hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2"
+            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-7.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-bounce"
             />
             <h3
               class="w-fit text-[16px] md:max-w-[290px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -582,15 +585,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class=" hover:-translate-y-2 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-7 gap-2"
+            class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-8.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -607,15 +610,15 @@
         </div>
 
         <div
-          class="bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class=" hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
-            class="flex flex-col justify-between items-center md:gap-7 gap-2"
+            class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
               src="./assest/key-feat-img-9.svg"
               alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-spin"
             />
             <h3
               class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -631,6 +634,8 @@
           </div>
         </div>
       </div>
+      <div class="absolute md:top-[445px] md:left-[229px] md:w-[824px] md:h-[225px] bg-[#1FA2D033] -z-1"
+            style="filter: blur(250.7px);"></div>
     </div>
 
     <!-- our goal -->
@@ -965,6 +970,7 @@
     </div>
     <!-- contactUs -->
     <div
+      id="contactUs"
       class="md:mt-[71px] mx-auto  mt-[20px] w-[365px] h-[415px] md:w-[1320px] md:max-w-[1320px] md:h-[342px] bg-[#D2ECF6] md:mx-auto rounded-md flex flex-col md:flex-row md:items-center scroll-animate"
     >
       <div class="ml-[14px] mt-[14px] md:mt-0 md:ml-[44px] flex flex-col md:gap-4">
@@ -1041,7 +1047,7 @@
           </label>
         </div>
         <button
-          class="mx-auto md:mx-0 md:mt-[-35px] text-[14px] md:text-[16px] font-bold text-[#FFFFFF] md:w-[158px] w-[124px] md:max-w-[158px] h-[44px] md:h-[48px] bg-[#0E5185] shadow-[ 0px_4px_22.9px_0px_#1B75BC14] rounded-xl hover:scale-[1.01] transition-all duration-200 ease-out cursor-pointer mb-[15px]"
+          class="mx-auto md:mx-0 md:mt-[-35px] text-[14px] md:text-[16px] font-bold text-[#FFFFFF] md:w-[158px] w-[124px] md:max-w-[158px] h-[44px] md:h-[48px] bg-[#0E5185] shadow-[ 0px_4px_22.9px_0px_#1B75BC14] rounded-xl  cursor-pointer mb-[15px] hover:scale-[0.99] transition-all duration-200 ease-out hover:bg-[#051F3D]"
         >
           Submit
         </button>

@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Power Maker AI Landing Page</title>
 
-<!-- Google Font -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind Play CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -28,14 +33,12 @@
               satoshi: ['Satoshi', 'sans-serif'],
               inter: ['Inter', 'sans-serif'],
             },
-            
+
           },
         },
       }
-
     </script>
-    
-    
+
     <!-- Custom CSS for Tailwind -->
     <style type="text/tailwindcss">
       @layer utilities {
@@ -59,12 +62,12 @@
     </style>
   </head>
 
-  <body class="bg-[#F5F7FA] font-['Satoshi'] ">
+  <body class="bg-[#F5F7FA] font-['Satoshi']">
     <!-- big-screen-bg-img -->
     <img
       src="./assest/landingPage-bg.svg"
       alt="bg-image-of-landing-page"
-      class="hidden md:!inline-block  md:w-full md:mx-auto md:h-[1007px] h-[547px] absolute top-0 left-0 z-1"
+      class="hidden md:!inline-block md:w-full md:mx-auto md:h-[1007px] h-[547px] absolute top-0 left-0 z-1"
     />
     <!-- mobile-bg-img -->
     <img
@@ -94,11 +97,25 @@
         <li>
           <a href="#home" class="font-[700] text-[15px] text-[#0E5185]">Home</a>
         </li>
-        <li>
-          <a href="#blog" class="font-[510] text-[15px] text-[#81817C]">Blog</a>
+        <li class="hidden">
+          <a
+            href="#blog"
+            class="font-[700] text-[15px] text-[#81817C] hover:text-[#0E5185]"
+            >Blog</a
+          >
         </li>
         <li>
-          <a href="#contactUs" class="font-[510] text-[15px] text-[#81817C]"
+          <a
+            href="../Documentation/index.html"
+            target="_blank"
+            class="font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contactUs"
+            class="font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
             >Contact Us</a
           >
         </li>
@@ -111,7 +128,8 @@
     </nav>
     <!-- hero-section -->
     <div
-      class=" hero-section relative z-2 mt-[40px] md:mt-[52px] flex flex-col items-center gap-14 scroll-animate"
+      id="home"
+      class="hero-section relative z-2 mt-[40px] md:mt-[52px] flex flex-col items-center gap-14 scroll-animate"
     >
       <div
         class="card-1 w-[286.45px] h-[58px] md:h-auto md:w-fit bg-[#FFFFFF] border-[0.82px] border-[#E6E6E6] !px-[14px] !py-[8px] rounded-md shadow-[0px_2px_3px_0px_#00000014]"
@@ -175,17 +193,22 @@
 
     <!-- our-vision -->
     <div
-      class="w-[340px] min-h-[610px] md:h-[610px] md:flex mt-[71px] md:w-[1320px] md:max-w-[1320px] mx-auto  md:py-[45px] scroll-animate"
+      class="w-[340px] min-h-[610px] md:h-[610px] md:flex mt-[71px] md:w-[1320px] md:max-w-[1320px] mx-auto md:py-[45px] scroll-animate"
     >
-      <div class="w-full flex md:flex-row flex-col relative ">
+      <div class="w-full flex md:flex-row flex-col relative">
         <div class="our-vision-content-card">
           <h2
-        class="text-[24px] md:text-[35px] text-center md:text-start font-[500] text-[#082343] w-full md:w-[903px] md:max-w-[903px] h-[50px] py-[7px] md:py-0 md:min-h-[60px] md:!px-[138px] md:!bg-gradient-to-r md:!from-[#1FA2D0] md:!to-[#1FA2D000] mt-[32px] md:mt-0"
-        style="
-          background: linear-gradient(to right, #1fa2d000, #1fa2d0, #1fa2d000);
-        "
-      >
-        Our Vision
+            class="text-[24px] md:text-[35px] text-center md:text-start font-[500] text-[#082343] w-full md:w-[903px] md:max-w-[903px] h-[50px] py-[7px] md:py-0 md:min-h-[60px] md:!px-[138px] md:!bg-gradient-to-r md:!from-[#1FA2D0] md:!to-[#1FA2D000] mt-[32px] md:mt-0"
+            style="
+              background: linear-gradient(
+                to right,
+                #1fa2d000,
+                #1fa2d0,
+                #1fa2d000
+              );
+            "
+          >
+            Our Vision
           </h2>
           <p
             class="font-[inter] text-[17px] font-[400] text-[#81817C] mx-auto md:mx-[0px] w-[344px] md:w-[699px] text-center md:text-start !mt-[25px] leading-[120%] md:!pl-[138px]"
@@ -203,14 +226,12 @@
             rapidly based on developer and consultant feedback.  
           </p>
           <button
-            class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block w-[153px] h-[47px] cursor-pointer border border-[#0E5185] ml-[90px] md:!ml-[138px] mt-[30.5px]
-            hover:bg-sky-50 hover:border-sky-50
-             "
+            class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block w-[153px] h-[47px] cursor-pointer border border-[#0E5185] ml-[90px] md:!ml-[138px] mt-[30.5px] hover:bg-sky-50 hover:border-sky-50"
           >
             Contact Us
           </button>
         </div>
-        <div class="our-vision-img-card ">
+        <div class="our-vision-img-card">
           <img
             src="./assest/our-vision-img.svg"
             alt=""
@@ -226,9 +247,11 @@
     </div>
 
     <!-- Current Features -->
-    <div class="mt-[215px] md:mt-0 bg-[#F5F7FA] border border-[#F5F7FA] w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate">
+    <div
+      class="mt-[215px] md:mt-0 bg-[#F5F7FA] border border-[#F5F7FA] w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate"
+    >
       <h2
-        class=" h-[50px] py-[7px] md:h-[60px] md:py-0 md:!mt-[-71px] w-full md:w-[903px] md:max-w-[903px] text-center font-[500] text-[24px] md:text-[35px] text-[#082343] !mx-auto"
+        class="h-[50px] py-[7px] md:h-[60px] md:py-0 md:!mt-[-71px] w-full md:w-[903px] md:max-w-[903px] text-center font-[500] text-[24px] md:text-[35px] text-[#082343] !mx-auto"
         style="
           background: linear-gradient(to right, #1fa2d000, #1fa2d0, #1fa2d000);
         "
@@ -236,10 +259,10 @@
         Current Features
       </h2>
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] md: rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pb-6.5 "
+        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] md: rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pb-6.5"
       >
         <div
-          class="w-full  md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[453px] md:!mt-[20px]"
+          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[453px] md:!mt-[20px]"
         >
           <h3
             class="text-[20px] md:text-[30px] font-[500] text-[#0E5185] w-fit"
@@ -342,61 +365,65 @@
           </p>
         </div>
       </div>
-      <div class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl
-      !mx-auto bg-[#FFFFFF] border border-[#E6E6E6]
-      shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pt-[40px] md:pb-6.5">
-        <div class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[453px] ">
-           <h3 class="text-[18px] md:text-[30px] font-[500] text-[#0E5185] w-fit">
-              Advanced AI ChatBot with Live CRM Interaction
-           </h3>
-           <p class="text-[14px] md:text-[17px] font-[400] text-[#81817C]">
-              Chat with your CRM like you chat with a colleague — only smarter. 
-           </p>
-           <h3
-             class="text-[20px] md:text-[24px] font-[500] text-[#1FA2D0] !mt-[7.5px]"
-            >
-             What it does
-           </h3>
-            <p
-              class="text-[14px] md:text-[16px] font-[400] text-[#81817C] !mt-[7.5px] leading-[130%] md:leading-[150%]"
-            >
-                 Describe your entity in plain English – “Create a Contact entity with
-                 name, email, phone, and a custom status field” – and PowerMakerAI will
-                 generate a full entity configuration, complete with attribute types,
-                 requirements, and schema suggestions. 
-            </p>
-            <h3
-               class="text-[20px] md:text-[24px] font-[500] text-[#1FA2D0] !mt-[7.5px]"
-            >
-               Visualizer Highlights 
-            </h3>
-            <ul
-               class="list-disc pl-7 text-[14px] md:text-[16px] font-[400] text-[#81817C] !mt-[7.5px] leading-[130%] md:leading-[140%]"
-            >
-               <li>Interactive schema builder with drag-and-drop support</li>
-               <li>Clear visual hierarchy of entities and attributes</li>
-               <li>Auto-detects attribute type based on name & intent</li>
-               <li>Instant preview of how your entity will look inside CRM </li>
-            </ul>
-            <h3
-                 class="text-[20px] md:text-[24px] font-[500] text-[#1FA2D0] !mt-[7.5px]"
-            >
-                Why it matters
-            </h3>
-            <p
-               class="text-[14px] md:text-[16px] font-[400] text-[#81817C] !mt-[7.5px] leading-[130%] md:leading-[150%]"
-            >
-               Developers and consultants often lose time navigating through multiple
-               Dynamics 365 customizations screens. PowerMakerAI streamlines this by
-               making entity creation as easy as talking to a colleague — and
-                visualizing the output in real time.
-            </p>
+      <div
+        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pt-[40px] md:pb-6.5"
+      >
+        <div
+          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[453px]"
+        >
+          <h3
+            class="text-[18px] md:text-[30px] font-[500] text-[#0E5185] w-fit"
+          >
+            Advanced AI ChatBot with Live CRM Interaction
+          </h3>
+          <p class="text-[14px] md:text-[17px] font-[400] text-[#81817C]">
+            Chat with your CRM like you chat with a colleague — only smarter. 
+          </p>
+          <h3
+            class="text-[20px] md:text-[24px] font-[500] text-[#1FA2D0] !mt-[7.5px]"
+          >
+            What it does
+          </h3>
+          <p
+            class="text-[14px] md:text-[16px] font-[400] text-[#81817C] !mt-[7.5px] leading-[130%] md:leading-[150%]"
+          >
+            Describe your entity in plain English – “Create a Contact entity
+            with name, email, phone, and a custom status field” – and
+            PowerMakerAI will generate a full entity configuration, complete
+            with attribute types, requirements, and schema suggestions. 
+          </p>
+          <h3
+            class="text-[20px] md:text-[24px] font-[500] text-[#1FA2D0] !mt-[7.5px]"
+          >
+            Visualizer Highlights 
+          </h3>
+          <ul
+            class="list-disc pl-7 text-[14px] md:text-[16px] font-[400] text-[#81817C] !mt-[7.5px] leading-[130%] md:leading-[140%]"
+          >
+            <li>Interactive schema builder with drag-and-drop support</li>
+            <li>Clear visual hierarchy of entities and attributes</li>
+            <li>Auto-detects attribute type based on name & intent</li>
+            <li>Instant preview of how your entity will look inside CRM </li>
+          </ul>
+          <h3
+            class="text-[20px] md:text-[24px] font-[500] text-[#1FA2D0] !mt-[7.5px]"
+          >
+            Why it matters
+          </h3>
+          <p
+            class="text-[14px] md:text-[16px] font-[400] text-[#81817C] !mt-[7.5px] leading-[130%] md:leading-[150%]"
+          >
+            Developers and consultants often lose time navigating through
+            multiple Dynamics 365 customizations screens. PowerMakerAI
+            streamlines this by making entity creation as easy as talking to a
+            colleague — and visualizing the output in real time.
+          </p>
         </div>
       </div>
     </div>
     <!-- key Features -->
     <div
-      class="key-features rounded-sm bg-[#FFFFFF] border border-[#F5F7FA] mt-[31px] md:mt-[70px] w-[350px]  md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate relative"
+      class="key-features rounded-sm bg-[#FFFFFF] border border-[#F5F7FA] mt-[31px] md:mt-[70px] w-[350px] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate relative"
     >
       <h2
         class="text-[24px] md:text-[35px] text-center md:text-start font-[500] text-[#082343] w-full md:w-[903px] md:max-w-[903px] h-[50px] py-[7px] md:py-0 md:min-h-[60px] md:!px-[147px] md:!bg-gradient-to-r md:!from-[#1FA2D0] md:!to-[#1FA2D000] mt-[32px]"
@@ -407,11 +434,10 @@
         Key Features
       </h2>
       <div
-        class="grid-box mt-[32px] md:mx-[147px] w-[330px] md:w-[1025px] md:max-w-[1025px] grid md:[grid-template-rows:repeat(3,_270px)] md:[grid-template-columns:repeat(3,_303px)] md:gap-y-[26px] md:gap-x-[59px] [grid-template-columns:repeat(2,_155px)] [grid-template-rows:repeat(4,200px)] gap-x-5 gap-y-4 mx-auto  md:mb-[91px]"
+        class="grid-box mt-[32px] md:mx-[147px] w-[330px] md:w-[1025px] md:max-w-[1025px] grid md:[grid-template-rows:repeat(3,_270px)] md:[grid-template-columns:repeat(3,_303px)] md:gap-y-[26px] md:gap-x-[59px] [grid-template-columns:repeat(2,_155px)] [grid-template-rows:repeat(4,200px)] gap-x-5 gap-y-4 mx-auto md:mb-[91px]"
       >
         <div
-          class=" bg-[#FFFFFF] hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out
-          !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="bg-[#FFFFFF] hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
@@ -419,10 +445,10 @@
             <img
               src="./assest/key-feat-img-1.svg"
               alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-bounce"
+              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
-              class="w-fit text-[16px] md:w-[220px] md:max-w-[220px]  md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
+              class="w-fit text-[16px] md:w-[220px] md:max-w-[220px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
             >
               Natural Language Entity Builder
             </h3>
@@ -436,7 +462,7 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
@@ -461,7 +487,7 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
@@ -469,7 +495,7 @@
             <img
               src="./assest/key-feat-img-3.svg"
               alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-spin"
+              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:max-w-[196px] md:text-[22px] font-[500] text-[#082343] leading-[120%] text-center"
@@ -486,7 +512,7 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
@@ -494,7 +520,7 @@
             <img
               src="./assest/key-feat-img-4.svg"
               alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-bounce"
+              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[15px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -511,7 +537,7 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
@@ -536,7 +562,7 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
@@ -544,7 +570,7 @@
             <img
               src="./assest/key-feat-img-6.svg"
               alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-spin"
+              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -561,7 +587,7 @@
         </div>
 
         <div
-          class=" hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out  bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
@@ -569,7 +595,7 @@
             <img
               src="./assest/key-feat-img-7.svg"
               alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-bounce"
+              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:max-w-[290px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -586,7 +612,7 @@
         </div>
 
         <div
-          class=" hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] cursor-pointer transition-transform duration-300 ease-in-out  bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
@@ -602,7 +628,7 @@
               Enterprise-Ready Security
             </h3>
             <p
-              class="text-[12px] leading-[110%] md:leading-[150%] md:text-[15px] text-[#81817C] font-[400] text-center md:w-fit "
+              class="text-[12px] leading-[110%] md:leading-[150%] md:text-[15px] text-[#81817C] font-[400] text-center md:w-fit"
             >
               Your data is safe — encrypted handling, API token-based access,
               and deployment-ready for secure environments.  
@@ -611,7 +637,7 @@
         </div>
 
         <div
-          class=" hover:-translate-y-2 hover:shadow-[0_0_12px_2px_rgba(31,162,208,0.6)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md cursor-pointer"
+          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md cursor-pointer"
         >
           <div
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
@@ -619,7 +645,7 @@
             <img
               src="./assest/key-feat-img-9.svg"
               alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-spin"
+              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
             <h3
               class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
@@ -635,31 +661,33 @@
           </div>
         </div>
       </div>
-      <div class="absolute md:top-[445px] md:left-[229px] md:w-[824px] md:h-[225px] bg-[#1FA2D033] -z-1"
-            style="filter: blur(250.7px);"></div>
+      <div
+        class="absolute md:top-[445px] md:left-[229px] md:w-[824px] md:h-[225px] bg-[#1FA2D033] -z-1"
+        style="filter: blur(250.7px)"
+      ></div>
     </div>
 
     <!-- our goal -->
     <div
-      class="w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto our-goal mt-[35px] md:mt-[71px] flex items-center justify-center relative border border-[#F5F7FA] md:min-h-[767px] scroll-animate "
+      class=" w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto our-goal mt-[35px] md:mt-[71px] flex items-center justify-center relative border border-[#F5F7FA] md:min-h-[670px] scroll-animate"
     >
       <img
         src="./assest/our-goal-union-lt.svg"
         alt="union-img"
-        class="hidden md:!block absolute top-[227px] left-[60px] z-1 w-[167px] h-[167px]"
+        class="hidden md:!block absolute top-[125px] left-[195px] z-1 w-[167px] h-[167px]"
       />
       <img
         src="./assest/our-goal-union-rt.svg"
         alt="union-img"
-        class="hidden md:!block absolute bottom-[290px] right-[25px] z-1 w-[167px] h-[167px]"
+        class="hidden md:!block absolute bottom-[185px] right-[20px] z-1 w-[167px] h-[167px]"
       />
       <img
         src="./assest/our-goal-bg-img.svg"
         alt="our-goal-bg-img"
-        class="absolute top-0 left-0 opacity-100 -z-1 "
+        class="absolute top-0 left-0 opacity-100 -z-1"
       />
       <div
-        class="flex flex-col justify-center items-center gap-4 md:gap-[29px]  z-5 mt-[18px] md:-mt-33 "
+        class="flex flex-col justify-center items-center gap-4 md:gap-[29px] z-5 mt-[18px] md:-mt-0"
       >
         <p
           class="text-[18px] w-[316px] leading-[135%] md:w-[900px] font-[500] md:text-[45px] text-[#000000] text-center md:leading-[120%]"
@@ -680,9 +708,45 @@
       </div>
     </div>
 
+    <!-- Payment -->
+     <div
+      class="payment w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto mt-[60px] md:mt-[70px] scroll-animate ">
+      <h2
+        class="w-fit text-[24px] md:text-[30px] text-[#082343] font-[500] md:font-[700] mx-auto leading-[100%] tracking-[2%] "
+      >
+        Purchase a subscription
+      </h2>
+      <p class="mt-[16px] text-[14px] font-[400] text-[#81817C] leading-[100%] w-fit mx-auto">Choose the plan that works for you.</p>
+      <div class="h-[355px] md:h-[563px] bg-[#FFFFFF66] mt-[16px] flex items-center justify-center relative rounded-md border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F]">
+        <img
+          src="./assest/pay-icon.svg"
+          alt="payment-bg-img"
+          class="absolute md:top-[122px] md:left-[325px] w-[15%] z-[-10]"
+        />
+        <img
+          src="./assest/pay-icon.svg"
+          alt="payment-bg-img"
+          class="absolute md:top-[350px] md:left-[785px] w-[15%] z-[-10]"
+        />
+        <div class="h-[185px] w-[275px] md:w-[541px] md:max-w-[741px] md:h-[260px] rounded-[30px] bg-[#1FA2D0CC] -skew-x-12 absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-0">   
+        </div>
+        <div class="md:w-[541px] md:max-w-[741px] md:h-[260px] z-1 flex flex-col items-center justify-center px-[20px] py-[30px] ">
+          <div class="flex gap-[10px] items-center">
+            
+            <span class="text-[30px] font-[700] text-[#082343] leading-[100%]">For All Users</span>
+          </div>
+          <div class="text-[20px] font-medium text-[#FFFFFF]">During Beta</div>
+          <span class="text-[12px] md:text-[18px] font-light leading-[100%] text-[#FFFFFF] relative -bottom-10  -right-10 md:-bottom-19 md:-right-35 opacity-70">No credit card required*</span>
+        </div>
+        
+      </div>
+
+
+    </div>
+
     <!-- FAQ -->
     <div
-      class="FAQ mt-[70px] md:mt-[0px] w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto min-h-[440px] md:px-[141px] scroll-animate"
+      class="FAQ mt-[55px] md:mt-[45px] w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto min-h-[440px] md:px-[141px] scroll-animate"
     >
       <h2
         class="w-fit text-[24px] md:text-[30px] text-[#082343] font-[500] md:font-[700] mx-auto leading-[35px]"
@@ -690,145 +754,212 @@
         Frequently Asked Questions
       </h2>
       <div
-        class=" mx-auto md:mx-0 md:w-full mt-[30px] md:mt-[58px] h-[34px] md:h-[40px] flex justify-between flex-wrap  leading-[100%]"
+        class="mx-auto md:mx-0 md:w-full mt-[30px] md:mt-[58px] min-h-[40px] flex justify-between flex-col gap-[10px] leading-[100%]"
       >
-        <p
-          class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <!-- Question Container -->
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class="mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class="mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class=" mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class=" mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class=" mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class="mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
       <div
-        class=" mx-auto md:mx-0 md:w-full mt-[18px] h-[34px] md:h-[45px] flex justify-between flex-wrap "
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <p
-          class="text-[#082343] md:px-[12px] text-[14px] md:text-[18px] font-[500] w-fit opacity-100"
-        >
-          Lorem ipsum dolor sit amet. Sit voluptatum
-        </p>
-        <img
-          src="./assest/faq-add-icon.svg"
-          alt=""
-          class="w-[16px] h-[16px] md:w-[16px] md:h-[16px] cursor-pointer md:pr-0"
-        />
+        <div class="flex justify-between items-center w-full">
+          <p
+            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+          >
+            Lorem ipsum dolor sit amet. Sit voluptatum
+          </p>
+          <img
+            src="./assest/faq-add-icon.svg"
+            alt="toggle"
+            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+            onclick="toggleFAQ(this)"
+          />
+        </div>
         <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10 self-end"
+          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+        >
+          This is the answer to the question. You can put any content here.
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
     </div>
 
     <!-- What people say -->
-    <div class="what-people-say mt-[41px] md:mt-[71px] md:max-w-[1320px] md:mx-auto scroll-animate ">
+    <div
+      class="what-people-say mt-[41px] md:mt-[71px] md:max-w-[1320px] md:mx-auto scroll-animate"
+    >
       <h2
         class="text-[24px] md:text-[30px] text-[#082343] font-bold !mx-auto w-fit"
       >
@@ -837,7 +968,7 @@
       <p
         class="text-[14px] md:text-[15px] font-[500] text-[#000000] opacity-50 w-fit mx-auto"
       >
-        Our customer say about us
+        Our users say about us
       </p>
       <!-- Scrollable Card Slider Container -->
       <div class="relative">
@@ -852,7 +983,7 @@
         <!-- Scrollable Cards -->
         <div
           id="card-container"
-          class=" ml-[21px] md:ml-[0px] flex gap-[10px] md:gap-[59px] overflow-x-auto mt-[25px] md:mt-[40px] scroll-smooth pr-[60px] [&::-webkit-scrollbar]:hidden"
+          class="ml-[21px] md:ml-[0px] flex gap-[10px] md:gap-[59px] overflow-x-auto mt-[25px] md:mt-[40px] scroll-smooth pr-[60px] [&::-webkit-scrollbar]:hidden"
           style="scrollbar-width: none; -ms-overflow-style: none"
         >
           <!-- CARD 1 -->
@@ -955,46 +1086,46 @@
         </button>
       </div>
       <!-- Script for scroll control -->
-       <script>
+      <script>
         const container = document.getElementById("card-container");
 
-  // Clone cards once to create loop illusion
-  const cards = Array.from(container.children);
-  cards.forEach(card => {
-    const clone = card.cloneNode(true);
-    clone.classList.add("cloned");
-    container.appendChild(clone);
-  });
+        // Clone cards once to create loop illusion
+        const cards = Array.from(container.children);
+        cards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          clone.classList.add("cloned");
+          container.appendChild(clone);
+        });
 
-  let scrollSpeed = 1; // 1px per frame
-  let animationFrame;
+        let scrollSpeed = 1; // 1px per frame
+        let animationFrame;
 
-  function autoScroll() {
-    container.scrollLeft += scrollSpeed;
+        function autoScroll() {
+          container.scrollLeft += scrollSpeed;
 
-    // Reset to start seamlessly when end is reached
-    if (container.scrollLeft >= container.scrollWidth / 2) {
-      container.scrollLeft = 0;
-    }
+          // Reset to start seamlessly when end is reached
+          if (container.scrollLeft >= container.scrollWidth / 2) {
+            container.scrollLeft = 0;
+          }
 
-    animationFrame = requestAnimationFrame(autoScroll);
-  }
+          animationFrame = requestAnimationFrame(autoScroll);
+        }
 
-  function stopAutoScroll() {
-    cancelAnimationFrame(animationFrame);
-  }
+        function stopAutoScroll() {
+          cancelAnimationFrame(animationFrame);
+        }
 
-  function startAutoScroll() {
-    animationFrame = requestAnimationFrame(autoScroll);
-  }
+        function startAutoScroll() {
+          animationFrame = requestAnimationFrame(autoScroll);
+        }
 
-  // Pause on hover
-  container.addEventListener("mouseenter", stopAutoScroll);
-  container.addEventListener("mouseleave", startAutoScroll);
+        // Pause on hover
+        container.addEventListener("mouseenter", stopAutoScroll);
+        container.addEventListener("mouseleave", startAutoScroll);
 
-  window.addEventListener("DOMContentLoaded", () => {
-    startAutoScroll();
-  });
+        window.addEventListener("DOMContentLoaded", () => {
+          startAutoScroll();
+        });
 
         function scrollCards(direction) {
           const container = document.getElementById("card-container");
@@ -1011,10 +1142,14 @@
     <!-- contactUs -->
     <div
       id="contactUs"
-      class="md:mt-[71px] mx-auto  mt-[50px] w-[340px] h-[415px] md:w-[1320px] md:max-w-[1320px] md:h-[342px] bg-[#D2ECF6] rounded-md flex flex-col md:flex-row md:items-center scroll-animate"
+      class="md:mt-[71px] mx-auto mt-[50px] w-[340px] h-[415px] md:w-[1320px] md:max-w-[1320px] md:h-[342px] bg-[#D2ECF6] rounded-md flex flex-col md:flex-row md:items-center scroll-animate"
     >
-      <div class="ml-[14px] mt-[14px] md:mt-0 md:ml-[44px] flex flex-col md:gap-4">
-        <span class="text-[14px] md:text-[18px] font-[400] text-[#1FA2D0]">Contact Us</span>
+      <div
+        class="ml-[14px] mt-[14px] md:mt-0 md:ml-[44px] flex flex-col md:gap-4"
+      >
+        <span class="text-[14px] md:text-[18px] font-[400] text-[#1FA2D0]"
+          >Contact Us</span
+        >
         <h2 class="w-fit text-[24px] md:text-[40px] font-[500] text-[#000000]">
           Get In <span class="text-[#1FA2D0]">Touch</span>
         </h2>
@@ -1073,7 +1208,9 @@
             Subject
           </label>
         </div>
-        <div class="relative md:h-[48px] row-start-4 row-end-6 md:col-span-2 md:row-start-3 md:row-end-5">
+        <div
+          class="relative md:h-[48px] row-start-4 row-end-6 md:col-span-2 md:row-start-3 md:row-end-5"
+        >
           <textarea
             id="note"
             placeholder=" "
@@ -1087,7 +1224,7 @@
           </label>
         </div>
         <button
-          class="mx-auto md:mx-0 md:mt-[-35px] text-[14px] md:text-[16px] font-bold text-[#FFFFFF] md:w-[158px] w-[124px] md:max-w-[158px] h-[44px] md:h-[48px] bg-[#0E5185] shadow-[ 0px_4px_22.9px_0px_#1B75BC14] rounded-xl  cursor-pointer mb-[15px] hover:scale-[0.99] transition-all duration-200 ease-out hover:bg-[#051F3D]"
+          class="mx-auto md:mx-0 md:mt-[-35px] text-[14px] md:text-[16px] font-bold text-[#FFFFFF] md:w-[158px] w-[124px] md:max-w-[158px] h-[44px] md:h-[48px] bg-[#0E5185] shadow-[ 0px_4px_22.9px_0px_#1B75BC14] rounded-xl cursor-pointer mb-[15px] hover:scale-[0.99] transition-all duration-200 ease-out hover:bg-[#051F3D]"
         >
           Submit
         </button>
@@ -1096,11 +1233,11 @@
     </div>
     <!-- footer -->
     <div
-      class="mt-[-95px] md:mt-[-50px] h-[473px] md:max-h-[315px]  relative -z-1 flex items-center scroll-animate md:max-w-[1320px] md:mx-auto"
+      class="mt-[-95px] md:mt-[-50px] h-[473px] md:max-h-[315px] relative -z-1 flex items-center scroll-animate md:max-w-[1320px] md:mx-auto"
     >
       <div class="w-full md:h-[216px]">
         <div
-          class=" mt-[45px] md:mt-0 w-full min-h-[182px] md:border-b md:border-[#DBE7F1] flex flex-col md:flex-row items-center"
+          class="mt-[45px] md:mt-0 w-full min-h-[182px] md:border-b md:border-[#DBE7F1] flex flex-col md:flex-row items-center"
         >
           <div
             class="w-fit h-[78px] flex flex-col items-center justify-between md:ml-[97.5px]"
@@ -1113,7 +1250,9 @@
               >
             </div>
           </div>
-          <div class="md:w-[453px] md:max-w-[453px] ml-[40.5px] hidden md:!block">
+          <div
+            class="md:w-[453px] md:max-w-[453px] ml-[40.5px] hidden md:!block"
+          >
             <p class="text-[13px] font-[400] text-[#323B44] leading-[22px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard dummy text
@@ -1121,7 +1260,9 @@
               text has standard dummy text ever since printing and.
             </p>
           </div>
-          <div class="mt-[20px] md:mt-0 border-1 border-[#DBE7F1] md:h-[182px] w-[250px] md:w-0 md:ml-[31.5px]"></div>
+          <div
+            class="mt-[20px] md:mt-0 border-1 border-[#DBE7F1] md:h-[182px] w-[250px] md:w-0 md:ml-[31.5px]"
+          ></div>
           <div
             class="w-[275px] md:w-[493.02px] max-h-[77px] grid md:grid-cols-3 grid-cols-2 gap-x-[90px] gap-y-[14px] md:gap-y-[8px] text-[14px] text-[#323B44] font-[400] md:ml-[38.5px] mt-[20px] md:mt-0"
           >
@@ -1140,8 +1281,13 @@
         </div>
       </div>
     </div>
-        <!-- Custom Scripts -->
+    <!-- Custom Scripts -->
     <script>
+      function toggleFAQ(imgElement) {
+        const answerBox = imgElement.parentElement.nextElementSibling;
+        answerBox.classList.toggle("hidden");
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         // --- Scroll-in Animation ---
         const animatedElements = document.querySelectorAll(".scroll-animate");

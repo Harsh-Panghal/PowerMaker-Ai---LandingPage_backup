@@ -65,57 +65,70 @@
   <body class="bg-[#F5F7FA] font-['Satoshi']">
     <!-- big-screen-bg-img -->
     <img
-      src="./assest/landingPage-bg.svg"
+      src="./public/assest/landingPage-bg.svg"
       alt="bg-image-of-landing-page"
       class="hidden md:!inline-block md:w-full md:mx-auto md:h-[1007px] h-[547px] absolute top-0 left-0 z-1"
     />
+    <img
+      src="./public/assest/our-goal-union-lt.svg"
+      alt=""
+      class="hidden md:!inline-block absolute top-[350px] left-[115px] md:w-[187px] md:h-[187px] z-2"
+    />
+    <img
+      src="./public/assest/our-goal-union-rt.svg"
+      alt=""
+      class="hidden md:!inline-block absolute top-[420px] right-[110px] z-2 md:w-[187px] md:h-[187px]"
+    />
     <!-- mobile-bg-img -->
     <img
-      src="./assest/mobile-bg-img.svg"
+      src="./public/assest/mobile-bg-img.svg"
       alt=""
       class="w-full inline-block md:!hidden h-[547px] absolute top-[-20px] left-0 z-1 opacity-100"
     />
     <!-- nav-area -->
     <nav
-      class="!mt-[30px] !mx-[60px] flex justify-between items-center z-2 relative scroll-animate md:!mx-auto md:w-[1320px] md:max-w-[1320px]"
-    >
+      class="!mt-[30px] !ml-[30px] flex justify-between items-center z-2 relative scroll-animate md:!mx-auto md:w-[1320px] md:max-w-[1320px]"
+    >      
       <div
-        class="logo-title md:w-fit flex items-center justify-between gap-[15px] mx-auto md:mx-0 mt-[30px] md:mt-0"
+        class="logo-title md:w-fit flex items-center md:justify-between  md:gap-[15px]  md:mx-0 mt-[30px] md:mt-0"
       >
+        <img src="./public/assest/three-line-icon.svg" alt="" class="md:hidden cursor-pointer">
         <img
-          src="./assest/logo.svg"
+          src="./public/assest/logo.svg"
           alt="logo-img"
-          class="w-[36.05px] h-[45px]"
+          class="w-[36.05px] h-[45px] ml-[45px] md:ml-0"
         />
-        <div class="text-[14.43px] font-[500] text-[#1C1C1C]">
-          Power Maker AI<span class="text-[8.57px] text-[#81817C] !mr-auto"
+        <div class="text-[14.43px] font-[500] text-[#1C1C1C] ml-[8px] md:!ml-0">
+          Power Maker AI<span class="text-[8.57px] text-[#81817C] !mr-auto ml-0.5"
             >(Beta)</span
           >
         </div>
       </div>
       <ul class="md:!flex gap-4 hidden">
         <li>
-          <a href="#home" class="font-[700] text-[15px] text-[#0E5185]">Home</a>
+          <a href="#home" class="nav-link font-[700] text-[15px] text-[#0E5185]"
+            >Home</a
+          >
         </li>
         <li class="hidden">
           <a
             href="#blog"
-            class="font-[700] text-[15px] text-[#81817C] hover:text-[#0E5185]"
+            class="nav-link font-[700] text-[15px] text-[#81817C] hover:text-[#0E5185]"
             >Blog</a
           >
         </li>
         <li>
           <a
-            href="./Documentation/index.html"
+            href="../Documentation/index.html"
             target="_blank"
-            class="font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
+            class="nav-link font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
             >Documentation</a
           >
         </li>
         <li>
           <a
             href="#contactUs"
-            class="font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
+            class="nav-link font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
             >Contact Us</a
           >
         </li>
@@ -185,7 +198,7 @@
         class="mt-0 w-[281.25px] h-[150px] md:w-[1172px] md:max-w-[1071px] md:h-[601.05px]"
       >
         <source
-          src="./assest/PowerMakerAi - Google Chrome 2025-07-02 18-11-38.mp4"
+          src="./public/assest/PowerMakerAi - Google Chrome 2025-07-02 18-11-38.mp4"
         />
       </video>
       <!-- <div class="bg-[#F5F7FA] absolute -bottom-18 w-full h-[254px] -z-1"></div> -->
@@ -233,12 +246,12 @@
         </div>
         <div class="our-vision-img-card">
           <img
-            src="./assest/our-vision-img.svg"
+            src="./public/assest/our-vision-img.svg"
             alt=""
             class="absolute z-1 top-[470px] left-[60.2px] md:top-[-38px] md:left-[871px] md:w-[320px] md:h-[450px] w-[225.27px] h-[265.02px]"
           />
           <img
-            src="./assest/our-vision-img-trans.svg"
+            src="./public/assest/our-vision-img-trans.svg"
             alt=""
             class="absolute md:w-[210px] md:h-[325px] bottom-[-345px] right-[10.2px] md:bottom-[50px] md:right-[60px] z-0 w-[149.47px] h-[193.46px]"
           />
@@ -443,7 +456,7 @@
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-1.svg"
+              src="./public/assest/key-feat-img-1.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -468,7 +481,7 @@
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-2.svg"
+              src="./public/assest/key-feat-img-2.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -493,7 +506,7 @@
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-3.svg"
+              src="./public/assest/key-feat-img-3.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -518,7 +531,7 @@
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-4.svg"
+              src="./public/assest/key-feat-img-4.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -543,7 +556,7 @@
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-5.svg"
+              src="./public/assest/key-feat-img-5.svg"
               alt="key-feat-img-1"
               class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -568,7 +581,7 @@
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-6.svg"
+              src="./public/assest/key-feat-img-6.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -593,7 +606,7 @@
             class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-7.svg"
+              src="./public/assest/key-feat-img-7.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -618,7 +631,7 @@
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-8.svg"
+              src="./public/assest/key-feat-img-8.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -643,7 +656,7 @@
             class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
           >
             <img
-              src="./assest/key-feat-img-9.svg"
+              src="./public/assest/key-feat-img-9.svg"
               alt="key-feat-img-1"
               class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
             />
@@ -669,20 +682,20 @@
 
     <!-- our goal -->
     <div
-      class=" w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto our-goal mt-[35px] md:mt-[71px] flex items-center justify-center relative border border-[#F5F7FA] md:min-h-[670px] scroll-animate"
+      class="w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto our-goal mt-[35px] md:mt-[71px] flex items-center justify-center relative border border-[#F5F7FA] md:min-h-[670px] scroll-animate"
     >
       <img
-        src="./assest/our-goal-union-lt.svg"
+        src="./public/assest/our-goal-union-lt.svg"
         alt="union-img"
         class="hidden md:!block absolute top-[125px] left-[195px] z-1 w-[167px] h-[167px]"
       />
       <img
-        src="./assest/our-goal-union-rt.svg"
+        src="./public/assest/our-goal-union-rt.svg"
         alt="union-img"
         class="hidden md:!block absolute bottom-[185px] right-[20px] z-1 w-[167px] h-[167px]"
       />
       <img
-        src="./assest/our-goal-bg-img.svg"
+        src="./public/assest/our-goal-bg-img.svg"
         alt="our-goal-bg-img"
         class="absolute top-0 left-0 opacity-100 -z-1"
       />
@@ -709,40 +722,62 @@
     </div>
 
     <!-- Payment -->
-     <div
-      class="payment w-[350px] md:w-[1320px] md:max-w-[1320px] mx-auto mt-[60px] md:mt-[70px] scroll-animate ">
+    <div
+      class="payment w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto mt-[60px] md:mt-[70px] scroll-animate"
+    >
       <h2
-        class="w-fit text-[24px] md:text-[30px] text-[#082343] font-[500] md:font-[700] mx-auto leading-[100%] tracking-[2%] "
+        class="w-fit text-[24px] md:text-[30px] text-[#082343] font-[500] md:font-[700] mx-auto leading-[100%] tracking-[2%]"
       >
         Purchase a subscription
       </h2>
-      <p class="mt-[16px] text-[14px] font-[400] text-[#81817C] leading-[100%] w-fit mx-auto">Choose the plan that works for you.</p>
-      <div class="h-[300px] md:h-[563px] bg-[#FFFFFF66] mt-[16px] flex items-center justify-center relative rounded-md border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F]">
+      <p
+        class="mt-[16px] text-[14px] font-[400] text-[#81817C] leading-[100%] w-fit mx-auto"
+      >
+        Choose the plan that works for you.
+      </p>
+      <div class="mt-[25px] md:h-[673px] relative">
+        <img src="./public/assest/pay-screen.png" alt="payment-screen" />
         <img
-          src="./assest/pay-icon.svg"
+          src="./public/assest/pay-icon.svg"
           alt="payment-bg-img"
-          class="absolute top-[60px] left-[10px] md:top-[122px] md:left-[325px] w-[35%] md:w-[15%] md:z-[-10]"
+          class="absolute top-[35px] left-[60px] md:top-[172px] md:left-[320px] w-[22%] md:w-[15%]"
         />
         <img
-          src="./assest/pay-icon.svg"
+          src="./public/assest/pay-icon.svg"
           alt="payment-bg-img"
-          class="absolute top-[180px] left-[200px] md:top-[350px] md:left-[785px] w-[35%] md:w-[15%] md:z-[-10]"
+          class="absolute bottom-[32px] right-[65px] md:bottom-[175px] md:right-[336px] w-[22%] md:w-[15%]"
         />
-        <div class=" w-[245px] h-[140px] md:w-[541px] md:max-w-[741px] md:h-[260px] rounded-[30px] bg-[#1FA2D0CC] -skew-x-12 absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-0">   
-        </div>
-        <div class="md:w-[541px] md:max-w-[741px] md:h-[260px] z-1 flex flex-col items-center justify-center px-[20px] py-[30px] ">
-          <div class="flex gap-[10px] items-center">
-            <img src="./assest/🎉.png" alt="celeberate-icon" class="w-[30px]">            
-            <span class="text-[24px] md:text-[40px] font-[700] text-[#082343] leading-[100%]">For All Users</span>
-            <img src="./assest/🎉 (1).png" alt="celeberate-icon" class="w-[30px]"> 
+        <div
+          class="h-[85px] w-[175px] md:w-[541px] md:max-w-[741px] md:h-[260px] rounded-[8.44px] md:rounded-[30px] bg-[#1FA2D0CC] -skew-x-12 absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-0"
+        ></div>
+        <div
+          class="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] h-[85px] w-[175px] md:w-[541px] md:max-w-[741px] md:h-[260px] z-1 flex flex-col items-center justify-center px-[20px] py-[30px]"
+        >
+          <div class="flex gap-[4px] md:gap-[10px] items-end">
+            <img
+              src="./public/assest/Party Popper.svg"
+              alt="celeberate-icon"
+              class="w-[15px] md:w-[30px] rotate-[-90deg]"
+            />
+            <span
+              class="text-[16px] md:text-[40px] font-[700] text-[#082343] leading-[100%]"
+              >For All Users</span
+            >
+            <img
+              src="./public/assest/Party Popper.svg"
+              alt="celeberate-icon"
+              class="w-[15px] md:w-[30px]"
+            />
           </div>
-          <div class="text-[20px] font-medium text-[#FFFFFF]">During Beta</div>
-          <span class="text-[12px] md:text-[16px] font-light leading-[100%] text-[#FFFFFF] relative -bottom-6  -right-8 md:-bottom-19 md:-right-35 opacity-70">No credit card required*</span>
+          <div class="text-[12px] md:text-[20px] font-medium text-[#FFFFFF]">
+            During Beta
+          </div>
+          <span
+            class="text-[8px] md:text-[16px] font-light leading-[100%] text-[#FFFFFF] relative -bottom-4 -right-8 md:-bottom-19 md:-right-35 opacity-70"
+            >No credit card required*</span
+          >
         </div>
-        
       </div>
-
-
     </div>
 
     <!-- FAQ -->
@@ -758,23 +793,25 @@
         class="mx-auto md:mx-0 md:w-full mt-[30px] md:mt-[58px] min-h-[40px] flex justify-between flex-col gap-[10px] leading-[100%]"
       >
         <!-- Question Container -->
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md mt-[6px]"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -783,23 +820,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -808,23 +848,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -833,23 +876,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -858,23 +904,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -883,23 +932,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -908,23 +960,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -933,23 +988,26 @@
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
-        <div class="flex justify-between items-center w-full">
-          <p
-            class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Lorem ipsum dolor sit amet. Sit voluptatum
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            Lorem ipsum dolor sit amet. Sit voluptatum
-          </p>
-          <img
-            src="./assest/faq-add-icon.svg"
-            alt="toggle"
-            class="faq-toggle w-[16px] h-[16px] cursor-pointer"
-            onclick="toggleFAQ(this)"
-          />
-        </div>
-        <div
-          class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
-        >
-          This is the answer to the question. You can put any content here.
+            This is the answer to the question. You can put any content here.
+          </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
@@ -1143,7 +1201,7 @@
     <!-- contactUs -->
     <div
       id="contactUs"
-      class="md:mt-[71px] mx-auto mt-[50px] w-[340px] h-[415px] md:w-[1320px] md:max-w-[1320px] md:h-[342px] bg-[#D2ECF6] rounded-md flex flex-col md:flex-row md:items-center scroll-animate"
+      class="md:mt-[71px] mx-auto mt-[50px] w-[330px] h-[415px] md:w-[1240px] md:max-w-[1240px] md:h-[342px] bg-[#D2ECF6] rounded-md flex flex-col md:flex-row md:items-center scroll-animate"
     >
       <div
         class="ml-[14px] mt-[14px] md:mt-0 md:ml-[44px] flex flex-col md:gap-4"
@@ -1165,7 +1223,7 @@
       </div>
 
       <div
-        class="mt-[15px] md:mt-0 w-[315px] grid-box ml-[14px] md:ml-[187px] md:w-[455px] md:max-w-[455px] grid md:grid-cols-2 grid-cols-1 md:grid-rows-4 [grid-template-rows:repeat(5,44px)] md:gap-x-5 md:gap-y-3 gap-y-[10px]"
+        class="mt-[15px] md:mt-0 w-[300px] grid-box ml-[14px] md:ml-[187px] md:w-[455px] md:max-w-[455px] grid md:grid-cols-2 grid-cols-1 md:grid-rows-4 [grid-template-rows:repeat(5,44px)] md:gap-x-5 md:gap-y-3 gap-y-[10px]"
       >
         <div class="relative w-full h-[44px] md:h-[48px] md:w-[218px]">
           <input
@@ -1234,7 +1292,7 @@
     </div>
     <!-- footer -->
     <div
-      class="mt-[-95px] md:mt-[-50px] h-[473px] md:max-h-[315px] relative -z-1 flex items-center scroll-animate md:max-w-[1320px] md:mx-auto"
+      class="!bg-[#FFFFFF] mt-[-95px] md:mt-[-50px] w-[360px] h-[473px] md:w-[1320px] md:max-h-[315px] relative -z-1 flex items-center scroll-animate md:max-w-[1320px] mx-auto"
     >
       <div class="w-full md:h-[216px]">
         <div
@@ -1243,7 +1301,7 @@
           <div
             class="w-fit h-[78px] flex flex-col items-center justify-between md:ml-[97.5px]"
           >
-            <img src="./assest/logo.svg" alt="logo-image" />
+            <img src="./public/assest/logo.svg" alt="logo-image" />
             <div class="text-[15.43px] font-medium text-[#1C1C1C]">
               Power Maker AI
               <span class="relative -left-[3px] text-[8.57px] text-[#81817C]"
@@ -1265,14 +1323,38 @@
             class="mt-[20px] md:mt-0 border-1 border-[#DBE7F1] md:h-[182px] w-[250px] md:w-0 md:ml-[31.5px]"
           ></div>
           <div
-            class="w-[275px] md:w-[493.02px] max-h-[77px] grid md:grid-cols-3 grid-cols-2 gap-x-[90px] gap-y-[14px] md:gap-y-[8px] text-[14px] text-[#323B44] font-[400] md:ml-[38.5px] mt-[20px] md:mt-0"
+            class="w-[275px] md:w-[493.02px] max-h-[77px] grid md:grid-cols-3 grid-cols-2 gap-x-[90px] gap-y-[14px] md:gap-y-[8px] text-[14px] text-[#323B44] font-[400] md:ml-[38.5px] mt-[20px] md:mt-0 relative z-10"
           >
-            <div class="div1">Home</div>
-            <div class="div2">Blogs</div>
-            <div class="div3 hidden md:!block">Follow Us:</div>
-            <div class="div4 whitespace-nowrap">Terms and Conditions</div>
-            <div class="md:col-span-2 whitespace-nowrap">Help and Support</div>
-            <div class="md:row-start-3">Privacy Policy</div>
+            <div class="">
+              <a href="#home" class="inline-block cursor-pointer hover:text-[#0E5185]"
+                >Home</a
+              >
+            </div>
+            <div>
+              <a href="#blog" class="cursor-pointer hover:text-[#0E5185]"
+                >Blogs</a
+              >
+            </div>
+            <div class="hidden md:block">
+              <a href="#follow" class="cursor-pointer hover:text-[#0E5185]"
+                >Follow Us:</a
+              >
+            </div>
+            <div class="whitespace-nowrap">
+              <a href="#terms" class="cursor-pointer hover:text-[#0E5185]"
+                >Terms and Conditions</a
+              >
+            </div>
+            <div class="md:col-span-2 whitespace-nowrap">
+              <a href="#help" class="cursor-pointer hover:text-[#0E5185]"
+                >Help and Support</a
+              >
+            </div>
+            <div class="md:row-start-3">
+              <a href="#privacy" class="cursor-pointer hover:text-[#0E5185]"
+                >Privacy Policy</a
+              >
+            </div>
           </div>
         </div>
         <div
@@ -1284,9 +1366,61 @@
     </div>
     <!-- Custom Scripts -->
     <script>
-      function toggleFAQ(imgElement) {
-        const answerBox = imgElement.parentElement.nextElementSibling;
-        answerBox.classList.toggle("hidden");
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        function setActiveLinkOnScroll() {
+          let scrollPos = window.scrollY + 100; // offset for fixed nav
+
+          sections.forEach((section) => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            const id = section.getAttribute("id");
+
+            if (scrollPos >= top && scrollPos < top + height) {
+              navLinks.forEach((link) => {
+                link.classList.remove("text-[#0E5185]", "font-[700]");
+                link.classList.add("text-[#81817C]");
+                if (link.getAttribute("href") === `#${id}`) {
+                  link.classList.add("text-[#0E5185]", "font-[700]");
+                }
+              });
+            }
+          });
+        }
+
+        // Initial call
+        setActiveLinkOnScroll();
+
+        // On scroll
+        window.addEventListener("scroll", setActiveLinkOnScroll);
+
+        // On click, scroll to section and apply active style
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navLinks.forEach((l) =>
+              l.classList.remove("text-[#0E5185]", "font-[700]")
+            );
+            this.classList.add("text-[#0E5185]", "font-[700]");
+          });
+        });
+      });
+      function toggleFAQ(icon) {
+        const faqItem = icon.closest(".faq-item");
+        const answer = faqItem.querySelector(".faq-answer");
+
+        const isOpen = !answer.classList.contains("hidden");
+
+        // Toggle visibility
+        answer.classList.toggle("hidden");
+
+        // Change icon
+        if (isOpen) {
+          icon.src = "./public/assest/faq-add-icon.svg";
+        } else {
+          icon.src = "./public/assest/faq-minus-icon.svg";
+        }
       }
 
       document.addEventListener("DOMContentLoaded", function () {

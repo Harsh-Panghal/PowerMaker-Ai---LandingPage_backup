@@ -108,7 +108,7 @@
         </li>
         <li>
           <a
-            href="./Documentation/index.html"
+            href="../Documentation/index.html"
             class="text-[16px] font-bold leading-[100%] text-[#81817C] hover:text-[#0E5185]"
             onclick="toggleMenu()"
             >Documentation</a
@@ -165,7 +165,7 @@
         </li>
         <li>
           <a
-            href="./Documentation/index.html"
+            href="../Documentation/index.html"
             target="_blank"
             class="nav-link font-[510] text-[15px] text-[#81817C] hover:text-[#0E5185]"
             >Documentation</a
@@ -327,10 +327,15 @@
         Current Features
       </h2>
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] md: rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pb-6.5"
+        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] md: rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 md:px-0 py-[20px] md:pb-6.5 flex flex-col md:flex-row gap-14"
       >
+        <img
+          src="./public/assest/current-feat-img1-icon.svg"
+          alt="current-feat-img1-icon"
+          class="hidden md:!inline-block"
+        />
         <div
-          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[453px] md:!mt-[20px]"
+          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!mt-[20px]"
         >
           <h3
             class="text-[20px] md:text-[30px] font-[500] text-[#0E5185] w-fit"
@@ -380,11 +385,12 @@
           </p>
         </div>
       </div>
+
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pb-6.5"
+        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] pl-4 py-[20px] md:pb-6.5 flex flex-col md:flex-row gap-14 justify-between"
       >
         <div
-          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[50px] md:!mt-[20px]"
+          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[30px] md:!mt-[20px]"
         >
           <h3
             class="text-[20px] md:text-[30px] font-[500] text-[#0E5185] w-fit"
@@ -432,13 +438,22 @@
             debugging.
           </p>
         </div>
+        <img
+          src="./public/assest/current-feat-img2-icon.svg"
+          alt="current-feat-img2-icon"
+          class="hidden md:!inline-block w-[230px] h-[230px] md:w-[350px] md:h-[350px] my-auto"
+        />
       </div>
+
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 py-[20px] md:pt-[40px] md:pb-6.5"
+        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 md:px-0 py-[20px] md:pt-[40px] md:pb-6.5 flex flex-col md:flex-row gap-18"
       >
-        <div
-          class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[453px]"
-        >
+        <img
+          src="./public/assest/current-feat-img3-icon.svg"
+          alt="current-feat-img3-icon"
+          class="hidden md:!inline-block"
+        />
+        <div class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0">
           <h3
             class="text-[18px] md:text-[30px] font-[500] text-[#0E5185] w-fit"
           >
@@ -605,81 +620,6 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
-        >
-          <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
-          >
-            <img
-              src="./public/assest/key-feat-img-5.svg"
-              alt="key-feat-img-1"
-              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
-            />
-            <h3
-              class="w-fit text-[16px] md:max-w-[278px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
-            >
-              Auto-Generated Plugin & JS Snippets
-            </h3>
-            <p
-              class="text-[14px] leading-[110%] md:leading-[150%] md:text-[16px] text-[#81817C] font-[400] text-center md:max-w-[321px]"
-            >
-              Turn requirements into ready-to-deploy C# plugin or JavaScript
-              code blocks, tailored for your CRM instance.  
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
-        >
-          <div
-            class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
-          >
-            <img
-              src="./public/assest/key-feat-img-6.svg"
-              alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
-            />
-            <h3
-              class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
-            >
-              One-Click CRM Export
-            </h3>
-            <p
-              class="text-[12px] leading-[110%] md:leading-[150%] md:text-[16px] text-[#81817C] font-[400] text-center md:max-w-[291px]"
-            >
-              Generate solution-ready JSON or metadata snippets and push to your
-              CRM with a single action. 
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
-        >
-          <div
-            class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
-          >
-            <img
-              src="./public/assest/key-feat-img-7.svg"
-              alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
-            />
-            <h3
-              class="w-fit text-[16px] md:max-w-[290px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
-            >
-              Built-in CRM Schema Visualizer
-            </h3>
-            <p
-              class="text-[12px] leading-[120%] md:leading-[150%] md:text-[16px] text-[#81817C] font-[400] text-center md:max-w-[260px]"
-            >
-              View entity relationships, attributes, and data types in an
-              interactive, user-friendly diagram. 
-            </p>
-          </div>
-        </div>
-
-        <div
           class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
         >
           <div
@@ -705,27 +645,196 @@
         </div>
 
         <div
-          class="hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md cursor-pointer"
+          class="relative cursor-pointer transition-transform duration-300 ease-in-out hidden md:!block bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md overflow-hidden"
         >
+          <!-- Blurred content -->
+          <div class="blur-[6px]">
+            <div
+              class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
+            >
+              <img
+                src="./public/assest/key-feat-img-5.svg"
+                alt="key-feat-img-1"
+                class="w-[50px] h-[50px] md:w-[75px] md:h-[75px]"
+              />
+              <h3
+                class="w-fit text-[16px] md:max-w-[278px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
+              >
+                Auto-Generated Plugin & JS Snippets
+              </h3>
+              <p
+                class="text-[14px] leading-[110%] md:leading-[150%] md:text-[16px] text-[#81817C] font-[400] text-center md:max-w-[321px]"
+              >
+                Turn requirements into ready-to-deploy C# plugin or JavaScript
+                code blocks, tailored for your CRM instance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Not blurred: Coming soon overlay -->
           <div
-            class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
+            class="coming-soon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 md:w-[250px] md:max-w-[250px]"
           >
-            <img
-              src="./public/assest/key-feat-img-9.svg"
-              alt="key-feat-img-1"
-              class="w-[45px] h-[45px] md:w-[75px] md:h-[75px] group-hover:animate-pulse"
-            />
-            <h3
-              class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
+            <div class="bg-[#1FA2D0] px-[18px] py-[14px] rounded-md relative">
+              <div class="group w-fit mx-auto">
+                <h2
+                  class="text-[#FFFFFF] text-[20px] text-center leading-[100%] font-bold whitespace-nowrap text-ellipsis"
+                >
+                  Auto-Generated...
+                </h2>
+                <div
+                  class="absolute bottom-full -mb-0.5 left-full -translate-x-full hidden group-hover:block bg-[#0E5185] text-white text-xs rounded px-2 py-1 whitespace-nowrap z-50"
+                >
+                  Auto-Generated Plugin & JS Snippets
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-[#0E5185] text-[#FFFFFF] font-light leading-[100%] px-[8px] py-[4px] rounded-b-md w-fit mx-auto"
             >
-              Scalable & Extendable
-            </h3>
-            <p
-              class="text-[12px] leading-[110%] md:leading-[150%] md:text-[15.5px] text-[#81817C] font-[400] text-center md:max-w-[339px]"
+              <span>Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md relative"
+        >
+          <div class="blur-[6px]">
+            <div
+              class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
             >
-              Built to grow with your team. Add more models, integrate deeper
-              with CRM APIs, or plug into CI/CD pipelines. 
-            </p>
+              <img
+                src="./public/assest/key-feat-img-6.svg"
+                alt="key-feat-img-1"
+                class="w-[45px] h-[45px] md:w-[75px] md:h-[75px]"
+              />
+              <h3
+                class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
+              >
+                One-Click CRM Export
+              </h3>
+              <p
+                class="text-[12px] leading-[110%] md:leading-[150%] md:text-[16px] text-[#81817C] font-[400] text-center md:max-w-[291px]"
+              >
+                Generate solution-ready JSON or metadata snippets and push to
+                your CRM with a single action. 
+              </p>
+            </div>
+          </div>
+          <!-- Not blurred: Coming soon overlay -->
+          <div
+            class="coming-soon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 md:w-[250px] md:max-w-[250px] w-[85%]"
+          >
+            <div class="bg-[#1FA2D0] px-[18px] py-[14px] rounded-md">
+              <h2
+                class="text-[#FFFFFF] text-[14px] md:text-[20px] text-center leading-[100%] font-bold whitespace-nowrap text-ellipsis"
+              >
+                One-Click CRM <span class="hidden md:inline">Export</span>
+              </h2>
+            </div>
+            <div
+              class="bg-[#0E5185] text-[#FFFFFF] text-[12px] md:text-[16px] font-light leading-[100%] px-[8px] py-[4px] rounded-b-md w-fit mx-auto"
+            >
+              <span>Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="cursor-pointer transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md relative"
+        >
+          <div class="blur-[6px]">
+            <div
+              class="flex flex-col justify-between items-center md:gap-4 gap-2 group"
+            >
+              <img
+                src="./public/assest/key-feat-img-7.svg"
+                alt="key-feat-img-1"
+                class="w-[45px] h-[45px] md:w-[75px] md:h-[75px]"
+              />
+              <h3
+                class="w-fit text-[16px] md:max-w-[290px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
+              >
+                Built-in CRM Schema Visualizer
+              </h3>
+              <p
+                class="text-[12px] leading-[120%] md:leading-[150%] md:text-[16px] text-[#81817C] font-[400] text-center md:max-w-[260px]"
+              >
+                View entity relationships, attributes, and data types in an
+                interactive, user-friendly diagram. 
+              </p>
+            </div>
+          </div>
+          <!-- Not blurred: Coming soon overlay -->
+          <div
+            class="coming-soon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 md:w-[250px] md:max-w-[250px] overflow-visible w-[85%]"
+          >
+            <div class="bg-[#1FA2D0] px-[18px] py-[14px] rounded-md relative">
+              <div class="group w-fit mx-auto">
+                <h2
+                  class="text-[#FFFFFF] text-[14px] md:text-[20px] text-center leading-[100%] font-bold whitespace-nowrap text-ellipsis"
+                >
+                  Built-in CRM <span class="md:hidden">...</span>
+                  <span class="hidden md:inline">Schema...</span>
+                </h2>
+                <div
+                  class="absolute bottom-full -mb-0.5 left-full -translate-x-full hidden group-hover:block bg-[#0E5185] text-white text-xs rounded px-2 py-1 whitespace-nowrap z-50"
+                >
+                  Built-in CRM Schema Visualizer
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-[#0E5185] text-[#FFFFFF] text-[12px] md:text-[16px] font-light leading-[100%] px-[8px] py-[4px] rounded-b-md w-fit mx-auto"
+            >
+              <span>Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="transition-transform duration-300 ease-in-out bg-[#FFFFFF] !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md cursor-pointer relative"
+        >
+          <div class="blur-[6px]">
+            <div
+              class="flex flex-col justify-between items-center md:gap-7 gap-2 group"
+            >
+              <img
+                src="./public/assest/key-feat-img-9.svg"
+                alt="key-feat-img-1"
+                class="w-[45px] h-[45px] md:w-[75px] md:h-[75px]"
+              />
+              <h3
+                class="w-fit text-[16px] md:text-[22px] font-[500] text-[#082343] text-center leading-[120%]"
+              >
+                Scalable & Extendable
+              </h3>
+              <p
+                class="text-[12px] leading-[110%] md:leading-[150%] md:text-[15.5px] text-[#81817C] font-[400] text-center md:max-w-[339px]"
+              >
+                Built to grow with your team. Add more models, integrate deeper
+                with CRM APIs, or plug into CI/CD pipelines. 
+              </p>
+            </div>
+          </div>
+          <!-- Not blurred: Coming soon overlay -->
+          <div
+            class="coming-soon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 w-[85%] md:w-[250px] md:max-w-[250px]"
+          >
+            <div class="bg-[#1FA2D0] px-[18px] py-[14px] rounded-md">
+              <h2
+                class="text-[#FFFFFF] text-[14px] md:text-[20px] text-center leading-[100%] font-bold whitespace-nowrap text-ellipsis"
+              >
+                Scalable &<span class="md:hidden">...</span
+                ><span class="hidden md:!inline"> Extendable</span>
+              </h2>
+            </div>
+            <div
+              class="bg-[#0E5185] text-[#FFFFFF] text-[12px] md:text-[16px] font-light leading-[100%] px-[8px] py-[4px] rounded-b-md w-fit mx-auto"
+            >
+              <span>Coming Soon</span>
+            </div>
           </div>
         </div>
       </div>
@@ -844,6 +953,7 @@
       >
         Frequently Asked Questions
       </h2>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[30px] md:mt-[58px] min-h-[40px] flex justify-between flex-col gap-[10px] leading-[100%]"
       >
@@ -853,7 +963,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              What is PowerMakerAI?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -865,13 +975,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md mt-[6px]"
           >
-            This is the answer to the question. You can put any content here.
+            PowerMakerAI is an AI-powered assistant that helps Dynamics CRM
+            users streamline customizations, generate entities, analyze plugin
+            trace logs, and automate routine tasks using natural language
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -881,7 +994,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              Do I need coding knowledge to use PowerMakerAI?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -893,13 +1006,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            Not necessarily. While some features are helpful for developers,
+            many tasks can be performed using plain English — no deep technical
+            skills required.
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -909,7 +1025,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              Is PowerMakerAI compatible with all versions of Dynamics 365?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -921,13 +1037,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            PowerMakerAI is designed to work with modern Dynamics 365 Online
+            environments. Compatibility with on-premise or older versions may be
+            limited.
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -937,7 +1056,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              What kind of customizations can PowerMakerAI handle?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -949,13 +1068,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            You can generate entities, update schema fields, fetch plugin trace
+            logs, create sample plugins, and even trigger CRM actions using
+            simple prompts.
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -965,7 +1087,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              Is my data safe with PowerMakerAI?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -977,13 +1099,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            Absolutely. We don’t store or access your Dynamics CRM data without
+            your permission. All processing is handled securely, and you
+            maintain full control of your environment.
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -993,7 +1118,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              Can PowerMakerAI help debug plugin errors?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -1005,13 +1130,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            Yes! One of the core features is Plugin Trace Log analysis. You can
+            upload or query logs, and the AI will explain errors in plain
+            language — with suggestions.
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -1021,7 +1149,8 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              How is PowerMakerAI different from Power Platform tools like Power
+              Automate?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -1033,13 +1162,16 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            PowerMakerAI is designed to enhance developer productivity with AI
+            guidance — not replace Power Platform tools, but complement them by
+            offering quick insights and automation.
           </div>
         </div>
         <div
           class="w-[346px] md:w-full border border-[#000000] opacity-10"
         ></div>
       </div>
+
       <div
         class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
       >
@@ -1049,7 +1181,7 @@
             <p
               class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
             >
-              Lorem ipsum dolor sit amet. Sit voluptatum
+              Is there a free trial available?
             </p>
             <img
               src="./public/assest/faq-add-icon.svg"
@@ -1061,7 +1193,68 @@
           <div
             class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
           >
-            This is the answer to the question. You can put any content here.
+            Yes. You can sign up and explore the beta version of PowerMakerAI
+            with access to core features.
+          </div>
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
+        ></div>
+      </div>
+
+      <div
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
+      >
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              How do I request support or report a bug?
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+          >
+            You can use the “Contact Us” section or email us directly at
+            [support@powermaker.ai].
+          </div>
+        </div>
+        <div
+          class="w-[346px] md:w-full border border-[#000000] opacity-10"
+        ></div>
+      </div>
+
+      <div
+        class="mx-auto md:mx-0 md:w-full mt-[18px] min-h-[45px] flex justify-between flex-col gap-[10px]"
+      >
+        <!-- Question Container -->
+        <div class="faq-item">
+          <div class="flex justify-between items-center w-full">
+            <p
+              class="text-[#082343] text-[14px] md:px-[12px] md:text-[18px] font-[500] w-fit opacity-100"
+            >
+              Will PowerMakerAI get more features in the future?
+            </p>
+            <img
+              src="./public/assest/faq-add-icon.svg"
+              alt="toggle"
+              class="faq-toggle w-[16px] h-[16px] cursor-pointer"
+              onclick="toggleFAQ(this)"
+            />
+          </div>
+          <div
+            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+          >
+            Definitely! We’re actively working on integrations, form scripting
+            support, and full PowerApps integration. Stay tuned.
           </div>
         </div>
         <div
@@ -1270,10 +1463,9 @@
         <p
           class="hidden md:!block text-[13.5px] font-[400] text-[#323B44] md:w-[517px] md:max-w-[517px] leading-[22px]"
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text ever
-          since printing and typesetting industry. Lorem Ipsum dummy text has
-          standard dummy text ever since printing and.
+          Have questions, feedback, or want to learn more about PowerMakerAI?
+          We’d love to hear from you. Whether you're a CRM developer, IT
+          manager, or just exploring AI tools — we're here to help.
         </p>
       </div>
 
@@ -1368,10 +1560,10 @@
             class="md:w-[453px] md:max-w-[453px] ml-[40.5px] hidden md:!block"
           >
             <p class="text-[13px] font-[400] text-[#323B44] leading-[22px]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry standard dummy text
-              ever since printing and typesetting industry. Lorem Ipsum dummy
-              text has standard dummy text ever since printing and.
+              PowerMakerAI is built to support CRM professionals with smarter
+              tools powered by AI. If you’d like to connect with us, partner, or
+              give feedback — reach out anytime. Let’s build the future of CRM
+              together.
             </p>
           </div>
           <div

@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
 
     <!-- Tailwind Play CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -79,7 +80,7 @@
     <!-- mobile-menu-conatiner -->
     <div
       id="menu"
-      class="mobile-menu-container hidden absolute top-0 left-0 z-5 w-[282px] h-[100vh] bg-[#FFFFFF] pl-[20px] pr-[24px] pt-[60px]"
+      class="mobile-menu-container hidden absolute top-0 left-0 z-5 w-[40vmax] h-[100dvh] bg-[#FFFFFF] pl-[20px] pr-[24px] pt-[40px]"
     >
       <div class="flex justify-between">
         <img src="./public/assest/logo.svg" alt="logo-img" />
@@ -126,10 +127,10 @@
     </div>
     <!-- nav-area -->
     <nav
-      class="!mt-[30px] !ml-[30px] flex justify-between items-center z-2 relative scroll-animate md:!mx-auto md:w-[1320px] md:max-w-[1320px]"
+      class="!mt-[30px] flex justify-between items-center z-2 relative scroll-animate !mx-auto md:w-[1320px] md:max-w-[1320px] w-[90%]"
     >
       <div
-        class="logo-title md:w-fit flex items-center md:justify-between md:gap-[15px] md:mx-0 mt-[30px] md:mt-0"
+        class="logo-title w-full md:w-fit flex items-center md:justify-between md:gap-[15px] md:mx-0 mt-[30px] md:mt-0"
       >
         <img
           id="menu-icon"
@@ -138,16 +139,20 @@
           class="md:hidden cursor-pointer"
           onclick="toggleMenu()"
         />
-        <img
-          src="./public/assest/logo.svg"
-          alt="logo-img"
-          class="w-[36.05px] h-[45px] ml-[45px] md:ml-0"
-        />
-        <div class="text-[14.43px] font-[500] text-[#1C1C1C] ml-[8px] md:!ml-0">
-          Power Maker AI<span
-            class="text-[8.57px] text-[#81817C] !mr-auto ml-0.5"
-            >(Beta)</span
+        <div class="flex items-center mx-auto">
+          <img
+            src="./public/assest/logo.svg"
+            alt="logo-img"
+            class="w-[36.05px] h-[45px]"
+          />
+          <div
+            class="text-[14.43px] font-[500] text-[#1C1C1C] ml-[8px] md:!ml-0"
           >
+            Power Maker AI<span
+              class="text-[8.57px] text-[#81817C] !mr-auto ml-0.5"
+              >(Beta)</span
+            >
+          </div>
         </div>
       </div>
       <ul class="md:!flex gap-4 hidden">
@@ -187,7 +192,7 @@
     </nav>
     <!-- hero-section -->
     <div
-      class="md:w-[1320px] md:max-w-[1320px] mx-auto hero-section relative z-2 mt-[40px] md:mt-[52px] flex flex-col items-center gap-14 scroll-animate"
+      class="w-[85%] md:w-[1320px] md:max-w-[1320px] mx-auto hero-section relative z-2 mt-[40px] md:mt-[52px] flex flex-col items-center gap-14 scroll-animate"
     >
       <img
         src="./public/assest/our-goal-union-lt.svg"
@@ -200,7 +205,7 @@
         class="hidden md:!inline-block absolute top-[295px] right-[15px] z-2 md:w-[187px] md:h-[187px]"
       />
       <div
-        class="card-1 w-[286.45px] h-[58px] md:h-auto md:w-fit bg-[#FFFFFF] border-[0.82px] border-[#E6E6E6] !px-[14px] !py-[8px] rounded-md shadow-[0px_2px_3px_0px_#00000014]"
+        class="w-[85%] card-1 h-[58px] md:h-auto md:w-fit bg-[#FFFFFF] border-[0.82px] border-[#E6E6E6] !px-[14px] !py-[8px] rounded-md shadow-[0px_2px_3px_0px_#00000014]"
       >
         <p
           class="text-[16px] text-center font-[500] bg-gradient-to-r from-[#0E5185] to-[#1FA2D0] bg-clip-text text-transparent leading-[120%] md:leading-[160%]"
@@ -208,8 +213,8 @@
           Your AI Assistant for Effortless Dynamics 365 Customizations
         </p>
       </div>
-      <div class="card-2 mt-[-28px] md:mt-0">
-        <div class="w-[326px] md:w-fit mx-auto">
+      <div class="card-2 mt-[-28px] md:mt-0 w-[99%] md:w-fit">
+        <div class="w-[97%] md:w-fit mx-auto">
           <div
             class="text-[24px] md:text-[45px] font-[700] bg-gradient-to-r from-[#1FA2D0] to-[#0E5185] bg-clip-text text-transparent text-center leading-[120%] md:leading-[110%]"
           >
@@ -228,29 +233,29 @@
           </div>
         </div>
         <p
-          class="text-[#81817C] text-[13px] w-[326px] md:w-fit md:text-[17px] font-[400] text-center mx-auto mt-[7px]"
+          class="text-[#81817C] text-[13px] w-[100%] md:w-fit md:text-[17px] font-[400] text-center mx-auto mt-[7px]"
         >
           Design entities, fix plugins, and resolve issues faster — all through
           guided, intelligent workflows. 
         </p>
       </div>
       <div
-        class="req-contact-btn-card flex gap-2.5 max-w-[305.19px] md:w-[346px] md:max-w-[346px] justify-between mt-[-40px] md:mt-0"
+        class="req-contact-btn-card flex gap-2.5 w-[90%] md:w-[346px] md:max-w-[346px] justify-between mt-[-40px] md:mt-0"
       >
         <button
-          class="text-[15px] font-[500] text-[#FFFFFF] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#0E5185] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer hover:bg-[#051F3D] hover:scale-[0.99] transition-all duration-200 ease-out"
+          class="text-[15px] font-[500] text-[#FFFFFF] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#0E5185] inline-block w-[50%] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer hover:bg-[#051F3D] hover:scale-[0.99] transition-all duration-200 ease-out"
         >
           Request Demo
         </button>
         <button
-          class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block min-w-[143.23px] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer border border-[#0E5185] hover:bg-sky-50 hover:border-sky-50"
+          class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block w-[50%] md:w-[153px] min-h-[44px] md:h-[47px] cursor-pointer border border-[#0E5185] hover:bg-sky-50 hover:border-sky-50"
         >
           Contact Us
         </button>
       </div>
       <video
         controls
-        class="mt-0 w-[281.25px] h-[150px] md:w-[1172px] md:max-w-[1071px] md:h-[601.05px]"
+        class="mt-0 w-[80%] h-[150px] md:w-[1172px] md:max-w-[1071px] md:h-[601.05px]"
       >
         <source
           src="./public/assest/PowerMakerAi - Google Chrome 2025-07-02 18-11-38.mp4"
@@ -261,10 +266,12 @@
 
     <!-- our-vision -->
     <div
-      class="w-[340px] min-h-[610px] md:h-[610px] md:flex mt-[71px] md:w-[1320px] md:max-w-[1320px] mx-auto md:py-[45px] scroll-animate"
+      class="w-[85%] md:min-h-[610px] md:h-[610px] md:flex mt-[30px] md:w-[1320px] md:max-w-[1320px] mx-auto md:py-[45px] scroll-animate"
     >
       <div class="w-full flex md:flex-row flex-col relative">
-        <div class="our-vision-content-card">
+        <div
+          class="our-vision-content-card w-full md:w-fit flex flex-col items-center md:items-start"
+        >
           <h2
             class="text-[24px] md:text-[35px] text-center md:text-start font-[500] text-[#082343] w-full md:w-[903px] md:max-w-[903px] h-[50px] py-[7px] md:py-0 md:min-h-[60px] md:!px-[138px] md:!bg-gradient-to-r md:!from-[#1FA2D0] md:!to-[#1FA2D000] mt-[32px] md:mt-0"
             style="
@@ -279,7 +286,7 @@
             Our Vision
           </h2>
           <p
-            class="font-[inter] text-[17px] font-[400] text-[#81817C] mx-auto md:mx-[0px] w-[344px] md:w-[699px] text-center md:text-start !mt-[25px] leading-[120%] md:!pl-[138px]"
+            class="font-[inter] text-[17px] font-[400] text-[#81817C] mx-auto md:mx-[0px] w-full md:w-[699px] text-center md:text-start !mt-[25px] leading-[120%] md:!pl-[138px]"
           >
             PowerMakerAI is more than a tool — it’s your AI pair programmer for
             Dynamics 365. Whether you're a solo consultant or an enterprise
@@ -287,28 +294,28 @@
             confidently. 
           </p>
           <p
-            class="font-[inter] text-[17px] font-[400] text-[#81817C] mx-auto md:mx-[0px] w-[344px] md:w-[699px] !mt-[31px] leading-[120%] md:pl-[138px] text-center md:text-start"
+            class="font-[inter] text-[17px] font-[400] text-[#81817C] mx-auto md:mx-[0px] w-full md:w-[699px] !mt-[31px] leading-[120%] md:pl-[138px] text-center md:text-start"
           >
             PowerMakerAI is built with the vision of simplifying Dynamics 365
             customizations using AI. The MVP is already live and evolving
             rapidly based on developer and consultant feedback.  
           </p>
           <button
-            class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block w-[153px] h-[47px] cursor-pointer border border-[#0E5185] ml-[90px] md:!ml-[138px] mt-[30.5px] hover:bg-sky-50 hover:border-sky-50"
+            class="text-[15px] font-[500] text-[#0E5185] rounded-xl shadow-[0px_8px_16px_0px_#00000014] bg-[#FFFFFF] inline-block w-[153px] h-[47px] cursor-pointer border border-[#0E5185] !mx-auto md:!ml-[138px] mt-[30.5px] hover:bg-sky-50 hover:border-sky-50"
           >
             Contact Us
           </button>
         </div>
-        <div class="our-vision-img-card">
+        <div class="our-vision-img-card hidden md:block">
           <img
             src="./public/assest/our-vision-img.svg"
             alt=""
-            class="absolute z-1 top-[470px] left-[60.2px] md:top-[-38px] md:left-[871px] md:w-[320px] md:h-[450px] w-[225.27px] h-[265.02px]"
+            class="hidden md:inline-block absolute z-1 top-[108%] left-[20%] md:top-[-38px] md:left-[871px] md:w-[320px] md:h-[450px] w-[70%] h-[265.02px]"
           />
           <img
             src="./public/assest/our-vision-img-trans.svg"
             alt=""
-            class="absolute md:w-[210px] md:h-[325px] bottom-[-345px] right-[10.2px] md:bottom-[50px] md:right-[60px] z-0 w-[149.47px] h-[193.46px]"
+            class="hidden md:inline-block absolute md:w-[210px] md:h-[325px] bottom-[-73%] right-[2%] md:bottom-[50px] md:right-[60px] z-0 w-[50%] h-[193.46px]"
           />
         </div>
       </div>
@@ -316,7 +323,7 @@
 
     <!-- Current Features -->
     <div
-      class="mt-[215px] md:mt-0 bg-[#F5F7FA] border border-[#F5F7FA] w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate"
+      class="mt-[40px] md:mt-0 bg-[#F5F7FA] border border-[#F5F7FA] w-[85%] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate"
     >
       <h2
         class="h-[50px] py-[7px] md:h-[60px] md:py-0 md:!mt-[-71px] w-full md:w-[903px] md:max-w-[903px] text-center font-[500] text-[24px] md:text-[35px] text-[#082343] !mx-auto"
@@ -327,7 +334,7 @@
         Current Features
       </h2>
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] md: rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 md:px-0 py-[20px] md:pb-6.5 flex flex-col md:flex-row gap-14"
+        class="!mt-10 w-full md:w-[1237px] md:max-w-[1237px] md: rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 md:px-0 py-[20px] md:pb-6.5 flex flex-col md:flex-row gap-14"
       >
         <img
           src="./public/assest/current-feat-img1-icon.svg"
@@ -387,7 +394,7 @@
       </div>
 
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] pl-4 py-[20px] md:pb-6.5 flex flex-col md:flex-row gap-14 justify-between"
+        class="!mt-10 w-full md:w-[1237px] md:max-w-[1237px] rounded-xl mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] pl-4 py-[20px] md:pb-6.5 flex flex-col md:flex-row gap-14 justify-between"
       >
         <div
           class="w-full md:w-[743.5px] md:max-w-[743.5px] mx-auto md:mx-0 md:!ml-[30px] md:!mt-[20px]"
@@ -446,7 +453,7 @@
       </div>
 
       <div
-        class="!mt-10 w-[330px] md:w-[1237px] md:max-w-[1237px] rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 md:px-0 py-[20px] md:pt-[40px] md:pb-6.5 flex flex-col md:flex-row gap-18"
+        class="!mt-10 w-full md:w-[1237px] md:max-w-[1237px] rounded-xl !mx-auto bg-[#FFFFFF] border border-[#E6E6E6] shadow-[0px_0px_4px_0px_#0000000A] px-4 md:px-0 py-[20px] md:pt-[40px] md:pb-6.5 flex flex-col md:flex-row gap-18"
       >
         <img
           src="./public/assest/current-feat-img3-icon.svg"
@@ -506,7 +513,7 @@
     </div>
     <!-- key Features -->
     <div
-      class="key-features rounded-sm bg-[#FFFFFF] border border-[#F5F7FA] mt-[31px] md:mt-[70px] w-[350px] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate relative"
+      class="key-features rounded-sm bg-[#FFFFFF] border border-[#F5F7FA] mt-[31px] md:mt-[70px] w-[85%] md:w-[1320px] md:max-w-[1320px] mx-auto scroll-animate relative"
     >
       <h2
         class="text-[24px] md:text-[35px] text-center md:text-start font-[500] text-[#082343] w-full md:w-[903px] md:max-w-[903px] h-[50px] py-[7px] md:py-0 md:min-h-[60px] md:!px-[147px] md:!bg-gradient-to-r md:!from-[#1FA2D0] md:!to-[#1FA2D000] mt-[32px]"
@@ -517,7 +524,7 @@
         Key Features
       </h2>
       <div
-        class="grid-box mt-[32px] md:mx-[147px] w-[330px] md:w-[1025px] md:max-w-[1025px] grid md:[grid-template-rows:repeat(3,_270px)] md:[grid-template-columns:repeat(3,_303px)] md:gap-y-[26px] md:gap-x-[59px] [grid-template-columns:repeat(2,_155px)] [grid-template-rows:repeat(4,200px)] gap-x-5 gap-y-4 mx-auto md:mb-[91px]"
+        class="grid-box mt-[32px] md:mx-[147px] w-full md:w-[1025px] md:max-w-[1025px] grid md:[grid-template-rows:repeat(3,_270px)] md:[grid-template-columns:repeat(3,_303px)] md:gap-y-[26px] md:gap-x-[59px] [grid-template-columns:repeat(2,_47%)] [grid-template-rows:repeat(4,auto)] gap-x-5 gap-y-4 mx-auto md:mb-[91px] px-1"
       >
         <div
           class="bg-[#FFFFFF] hover:-translate-y-2 hover:shadow-[0_0_10px_rgba(120,120,130,0.5)] cursor-pointer transition-transform duration-300 ease-in-out !px-2.5 !py-4 border border-[#E6E6E6] shadow-[0px_4px_8px_0px_#0000000F] rounded-md"
@@ -730,7 +737,8 @@
               <h2
                 class="text-[#FFFFFF] text-[14px] md:text-[20px] text-center leading-[100%] font-bold whitespace-nowrap text-ellipsis"
               >
-                One-Click CRM <span class="hidden md:inline">Export</span>
+                One-Click<span class="md:hidden">...</span>
+                <span class="hidden md:inline">CRM Export</span>
               </h2>
             </div>
             <div
@@ -846,7 +854,7 @@
 
     <!-- our goal -->
     <div
-      class="w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto our-goal mt-[35px] md:mt-[71px] flex items-center justify-center relative border border-[#F5F7FA] md:min-h-[670px] scroll-animate"
+      class="w-[85%] md:w-[1320px] md:max-w-[1320px] mx-auto our-goal mt-[35px] md:mt-[71px] flex items-center justify-center relative border border-[#F5F7FA] md:min-h-[670px] scroll-animate"
     >
       <img
         src="./public/assest/our-goal-union-lt.svg"
@@ -861,13 +869,13 @@
       <img
         src="./public/assest/our-goal-bg-img.svg"
         alt="our-goal-bg-img"
-        class="absolute top-0 left-0 opacity-100 -z-1"
+        class="absolute top-0 left-0 w-full h-[155.09px] md:h-auto z-[1] object-cover"
       />
       <div
-        class="flex flex-col justify-center items-center gap-4 md:gap-[29px] z-5 mt-[18px] md:-mt-0"
+        class="flex flex-col justify-center items-center gap-4 md:gap-[29px] z-5 mt-[18px] md:-mt-0 md:w-fit w-full"
       >
         <p
-          class="text-[18px] w-[316px] leading-[135%] md:w-[900px] font-[500] md:text-[45px] text-[#000000] text-center md:leading-[120%]"
+          class="text-[18px] w-[92%] leading-[135%] md:w-[900px] font-[500] md:text-[45px] text-[#000000] text-center md:leading-[120%]"
         >
           Our Goal is to build a world
           <span class="font-[700] text-[#1FA2D0]"
@@ -875,7 +883,7 @@
           >
         </p>
         <p
-          class="text-[15.5px] w-[319px] leading-[135%] md:w-[1034px] md:max-w-[1034px] font-[500] md:text-[45px] text-[#000000] text-center md:leading-[120%]"
+          class="text-[15.5px] w-[95%] leading-[135%] md:w-[1034px] md:max-w-[1034px] font-[500] md:text-[45px] text-[#000000] text-center md:leading-[120%]"
         >
           Our platform harnesses the power of AI
           <span class="inline-block font-[700] text-[#1FA2D0]"
@@ -887,7 +895,7 @@
 
     <!-- Payment -->
     <div
-      class="payment w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto mt-[60px] md:mt-[70px] scroll-animate"
+      class="payment w-[85%] md:w-[1320px] md:max-w-[1320px] mx-auto mt-[60px] md:mt-[70px] scroll-animate"
     >
       <h2
         class="w-fit text-[24px] md:text-[30px] text-[#082343] font-[500] md:font-[700] mx-auto leading-[100%] tracking-[2%]"
@@ -904,40 +912,40 @@
         <img
           src="./public/assest/pay-icon.svg"
           alt="payment-bg-img"
-          class="absolute top-[35px] left-[60px] md:top-[172px] md:left-[320px] w-[22%] md:w-[15%]"
+          class="absolute top-[15%] left-[16%] md:top-[172px] md:left-[320px] w-[22%] md:w-[15%]"
         />
         <img
           src="./public/assest/pay-icon.svg"
           alt="payment-bg-img"
-          class="absolute bottom-[32px] right-[65px] md:bottom-[175px] md:right-[336px] w-[22%] md:w-[15%]"
+          class="absolute bottom-[16%] right-[19%] md:bottom-[175px] md:right-[336px] w-[22%] md:w-[15%]"
         />
         <div
-          class="h-[85px] w-[175px] md:w-[541px] md:max-w-[741px] md:h-[260px] rounded-[8.44px] md:rounded-[30px] bg-[#1FA2D0CC] -skew-x-12 absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-0"
+          class="h-[55%] w-[55%] md:w-[541px] md:max-w-[741px] md:h-[260px] rounded-[8.44px] md:rounded-[30px] bg-[#1FA2D0CC] -skew-x-12 absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-0"
         ></div>
         <div
-          class="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] h-[85px] w-[175px] md:w-[541px] md:max-w-[741px] md:h-[260px] z-1 flex flex-col items-center justify-center px-[20px] py-[30px]"
+          class="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] h-[55%] w-[58%] md:w-[541px] md:max-w-[741px] md:h-[260px] z-1 flex flex-col items-center justify-center px-[20px] py-[30px]"
         >
           <div class="flex gap-[4px] md:gap-[10px] items-end">
             <img
               src="./public/assest/Party Popper.svg"
               alt="celeberate-icon"
-              class="w-[15px] md:w-[30px] rotate-[-90deg]"
+              class="w-[4vmin] md:w-[30px] rotate-[-90deg]"
             />
             <span
-              class="text-[16px] md:text-[40px] font-[700] text-[#082343] leading-[100%]"
+              class="text-[4vmin] md:text-[40px] font-[700] text-[#082343] leading-[100%]"
               >For All Users</span
             >
             <img
               src="./public/assest/Party Popper.svg"
               alt="celeberate-icon"
-              class="w-[15px] md:w-[30px]"
+              class="w-[4vmin] md:w-[30px]"
             />
           </div>
-          <div class="text-[12px] md:text-[20px] font-medium text-[#FFFFFF]">
+          <div class="text-[3vmin] md:text-[20px] font-medium text-[#FFFFFF]">
             During Beta
           </div>
           <span
-            class="text-[8px] md:text-[16px] font-light leading-[100%] text-[#FFFFFF] relative -bottom-4 -right-8 md:-bottom-19 md:-right-35 opacity-70"
+            class="text-[2vmin] md:text-[16px] font-light leading-[100%] text-[#FFFFFF] relative top-[3vmax] left-[5vmax] md:-bottom-19 md:-right-35 opacity-70"
             >No credit card required*</span
           >
         </div>
@@ -946,7 +954,7 @@
 
     <!-- FAQ -->
     <div
-      class="FAQ mt-[55px] md:mt-[45px] w-[340px] md:w-[1320px] md:max-w-[1320px] mx-auto min-h-[440px] md:px-[141px] scroll-animate"
+      class="FAQ mt-[55px] md:mt-[45px] w-[85%] md:w-[1320px] md:max-w-[1320px] mx-auto min-h-[440px] md:px-[141px] scroll-animate"
     >
       <h2
         class="w-fit text-[24px] md:text-[30px] text-[#082343] font-[500] md:font-[700] mx-auto leading-[35px]"
@@ -973,16 +981,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md mt-[6px]"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            PowerMakerAI is an AI-powered assistant that helps Dynamics CRM
-            users streamline customizations, generate entities, analyze plugin
-            trace logs, and automate routine tasks using natural language
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              PowerMakerAI is an AI-powered assistant that helps Dynamics CRM
+              users streamline customizations, generate entities, analyze plugin
+              trace logs, and automate routine tasks using natural language.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1004,16 +1015,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            Not necessarily. While some features are helpful for developers,
-            many tasks can be performed using plain English — no deep technical
-            skills required.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              Not necessarily. While some features are helpful for developers,
+              many tasks can be performed using plain English — no deep
+              technical skills required.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1035,16 +1049,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            PowerMakerAI is designed to work with modern Dynamics 365 Online
-            environments. Compatibility with on-premise or older versions may be
-            limited.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              PowerMakerAI is designed to work with modern Dynamics 365 Online
+              environments. Compatibility with on-premise or older versions may
+              be limited.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1066,16 +1083,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            You can generate entities, update schema fields, fetch plugin trace
-            logs, create sample plugins, and even trigger CRM actions using
-            simple prompts.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              You can generate entities, update schema fields, fetch plugin
+              trace logs, create sample plugins, and even trigger CRM actions
+              using simple prompts.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1097,16 +1117,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            Absolutely. We don’t store or access your Dynamics CRM data without
-            your permission. All processing is handled securely, and you
-            maintain full control of your environment.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              Absolutely. We don’t store or access your Dynamics CRM data
+              without your permission. All processing is handled securely, and
+              you maintain full control of your environment.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1128,16 +1151,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            Yes! One of the core features is Plugin Trace Log analysis. You can
-            upload or query logs, and the AI will explain errors in plain
-            language — with suggestions.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              Yes! One of the core features is Plugin Trace Log analysis. You
+              can upload or query logs, and the AI will explain errors in plain
+              language — with suggestions.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1160,16 +1186,19 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            PowerMakerAI is designed to enhance developer productivity with AI
-            guidance — not replace Power Platform tools, but complement them by
-            offering quick insights and automation.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              PowerMakerAI is designed to enhance developer productivity with AI
+              guidance — not replace Power Platform tools, but complement them
+              by offering quick insights and automation.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1191,15 +1220,18 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            Yes. You can sign up and explore the beta version of PowerMakerAI
-            with access to core features.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              Yes. You can sign up and explore the beta version of PowerMakerAI
+              with access to core features.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1221,15 +1253,18 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            You can use the “Contact Us” section or email us directly at
-            [support@powermaker.ai].
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              You can use the “Contact Us” section or email us directly at
+              [support@powermaker.ai].
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
 
       <div
@@ -1251,15 +1286,18 @@
             />
           </div>
           <div
-            class="faq-answer hidden bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out mt-[6px]"
           >
-            Definitely! We’re actively working on integrations, form scripting
-            support, and full PowerApps integration. Stay tuned.
+            <!-- Padding is now safely inside -->
+            <div
+              class="bg-white text-[#333] text-[15px] px-4 py-3 rounded-md shadow-md"
+            >
+              Definitely! We’re actively working on integrations, form scripting
+              support, and full PowerApps integration. Stay tuned.
+            </div>
           </div>
         </div>
-        <div
-          class="w-[346px] md:w-full border border-[#000000] opacity-10"
-        ></div>
+        <div class="w-full border border-[#000000] opacity-10"></div>
       </div>
     </div>
 
@@ -1449,7 +1487,7 @@
     <!-- contactUs -->
     <div
       id="contactUs"
-      class="md:mt-[71px] mx-auto mt-[50px] w-[330px] h-[415px] md:w-[1240px] md:max-w-[1240px] md:h-[342px] bg-[#D2ECF6] rounded-md flex flex-col md:flex-row md:items-center scroll-animate relative z-2"
+      class="md:mt-[71px] mx-auto mt-[50px] w-[86%] h-[415px] md:w-[1240px] md:max-w-[1240px] md:h-[342px] bg-[#D2ECF6] rounded-md flex flex-col md:flex-row md:items-center scroll-animate relative z-2"
     >
       <div
         class="ml-[14px] mt-[14px] md:mt-0 md:ml-[44px] flex flex-col md:gap-4"
@@ -1470,7 +1508,7 @@
       </div>
 
       <div
-        class="mt-[15px] md:mt-0 w-[300px] grid-box ml-[14px] md:ml-[187px] md:w-[455px] md:max-w-[455px] grid md:grid-cols-2 grid-cols-1 md:grid-rows-4 [grid-template-rows:repeat(5,44px)] md:gap-x-5 md:gap-y-3 gap-y-[10px]"
+        class="mt-[15px] md:mt-0 w-[95%] grid-box ml-[14px] md:ml-[187px] md:w-[455px] md:max-w-[455px] grid md:grid-cols-2 grid-cols-1 md:grid-rows-4 [grid-template-rows:repeat(5,44px)] md:gap-x-5 md:gap-y-3 gap-y-[10px]"
       >
         <div class="relative w-full h-[44px] md:h-[48px] md:w-[218px]">
           <input
@@ -1539,7 +1577,7 @@
     </div>
     <!-- footer -->
     <div
-      class="!bg-[#FFFFFF] mt-[-95px] md:mt-[-50px] w-[360px] h-[473px] md:w-[1320px] md:max-h-[315px] relative flex items-center scroll-animate md:max-w-[1320px] mx-auto"
+      class="!bg-[#FFFFFF] mt-[-95px] md:mt-[-50px] w-[96%] h-[473px] md:w-[1320px] md:max-h-[315px] relative flex items-center scroll-animate md:max-w-[1320px] mx-auto"
     >
       <div class="w-full md:h-[216px]">
         <div
@@ -1609,71 +1647,5 @@
         </div>
       </div>
     </div>
-    <!-- Custom Scripts -->
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("hidden");
-      }
-
-      function toggleFAQ(icon) {
-        const faqItem = icon.closest(".faq-item");
-        const answer = faqItem.querySelector(".faq-answer");
-
-        const isOpen = !answer.classList.contains("hidden");
-
-        // Toggle visibility
-        answer.classList.toggle("hidden");
-
-        // Change icon
-        if (isOpen) {
-          icon.src = "./public/assest/faq-add-icon.svg";
-        } else {
-          icon.src = "./public/assest/faq-minus-icon.svg";
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // --- Scroll-in Animation ---
-        const animatedElements = document.querySelectorAll(".scroll-animate");
-        if ("IntersectionObserver" in window) {
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add("visible");
-                  // Optional: Stop observing the element once it's visible
-                  // observer.unobserve(entry.target);
-                }
-              });
-            },
-            {
-              threshold: 0.1, // Trigger when 10% of the element is visible
-            }
-          );
-
-          animatedElements.forEach((element) => {
-            observer.observe(element);
-          });
-        } else {
-          // Fallback for older browsers that don't support IntersectionObserver
-          animatedElements.forEach((element) => {
-            element.classList.add("visible");
-          });
-        }
-
-        // --- Card Slider Control ---
-        window.scrollCards = function (direction) {
-          const container = document.getElementById("card-container");
-          const scrollAmount = container.offsetWidth * 0.8; // Scroll by 80% of the container's width
-
-          if (direction === "left") {
-            container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-          } else {
-            container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-          }
-        };
-      });
-    </script>
   </body>
 </html>

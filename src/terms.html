@@ -72,30 +72,44 @@
         ::-webkit-scrollbar-thumb:hover {
           background: rgb(10, 69, 108);
         }
+        @media screen and (max-width: 768px){
+          ::-webkit-scrollbar{
+            width: 6px;
+          }
+        }
       }
     </style>
   </head>
-  <body class="overflow-hidden">
-    <header>
-      <nav class="!mt-[30px] !mx-[60px] flex justify-between items-center">
+  <body class="overflow-hidden h-[100dvh]">
+    <header class="w-full">
+      <nav
+        class="w-[88%] mx-auto md:!mt-[30px] md:!mx-[60px] flex justify-between items-center"
+      >
         <div
-          class="logo-title md:w-fit flex items-center md:justify-between md:gap-[15px] md:mx-0 mt-[30px] md:mt-0"
+          class="logo-title w-full md:w-fit flex items-center md:justify-between md:gap-[15px] md:mx-0 mt-[30px] md:mt-0"
         >
           <img
-            src="../public/assest/logo.svg"
-            alt="logo-img"
-            class="w-[36.05px] h-[45px] ml-[45px] md:ml-0"
+            id="menu-icon"
+            src="../public/assest/three-line-icon.svg"
+            alt=""
+            class="md:hidden cursor-pointer"
+            onclick="toggleMenu()"
           />
-          <div
-            class="text-[14.43px] font-[500] text-[#1C1C1C] ml-[8px] md:!ml-0"
-          >
-            Power Maker AI<span
-              class="text-[8.57px] text-[#81817C] !mr-auto ml-0.5"
-              >(Beta)</span
-            >
+          <div class="flex items-center mx-auto gap-2">
+            <img
+              src="../public/assest/logo.svg"
+              alt="logo-img"
+              class="w-[36.05px] h-[45px]"
+            />
+            <div class="text-[14.43px] font-[500] text-[#1C1C1C]">
+              Power Maker AI<span
+                class="text-[8.57px] text-[#81817C] !mr-auto ml-0.5"
+                >(Beta)</span
+              >
+            </div>
           </div>
         </div>
-        <ul class="md:!flex gap-4 hidden font-['Inter']">
+        <!-- <ul class="md:!flex gap-4 hidden font-['Inter']">
           <li>
             <a
               href="../index.html#home"
@@ -112,7 +126,7 @@
           </li>
           <li>
             <a
-              href="../Documentation/index.html"
+              href="../../Documentation/index.html"
               target="_blank"
               class="nav-link font-[510] text-[14px] text-[#81817C] hover:text-[#0E5185]"
               >Documentation</a
@@ -126,7 +140,7 @@
               >Contact Us</a
             >
           </li>
-        </ul>
+        </ul> -->
         <button
           onclick="window.open('https://chat.powermakerai.com/', '_blank');"
           class="text-[15px] font-[500] text-[#FFFFFF] bg-[#0E5185] rounded-[12px] md:!inline-block w-[153px] h-[47px] cursor-pointer hidden hover:scale-[0.99] transition-all duration-200 ease-out hover:bg-[#051F3D]"
@@ -136,10 +150,11 @@
       </nav>
     </header>
 
-    <main class="flex h-[543px]">
+    <main class="flex h-[92dvh] md:h-[543px] relative">
       <!-- sidebar -->
       <div
-        class="sidebar hide-scrollbar shrink-0 overflow-y-auto overflow-x-hidden md:w-[280px] md:max-w-[250px] bg-[#FAFAFA] rounded-tr-xl px-[25px] py-[27px]"
+        id="sidebar"
+        class="hidden md:!block sidebar hide-scrollbar shrink-0 overflow-y-auto overflow-x-hidden md:w-[280px] md:max-w-[250px] bg-[#FAFAFA] rounded-tr-xl px-[25px] py-[27px]"
       >
         <div class="flex flex-col gap-[16px]">
           <h2 class="text-[#082343] text-[16px] font-semibold w-fit">
@@ -207,19 +222,19 @@
         class="flex-1 h-full overflow-y-auto overflow-x-hidden scroll-smooth"
       >
         <h1
-          class="text-[30px] font-medium text-[#1E1D1D] leading-[100%] w-fit mx-auto mt-[10px]"
+          class="text-[20px] md:text-[30px] font-medium text-[#1E1D1D] leading-[100%] w-fit mx-auto mt-[16px] md:mt-[10px]"
         >
           Terms of Use
         </h1>
         <section
           id="terms-container"
-          class="px-[60px] mt-[30px] mb-[16px]"
+          class="px-[10px] md:px-[60px] mt-[20px] md:mt-[30px] mb-[16px]"
         ></section>
       </div>
     </main>
 
     <footer
-      class="bg-[#FFFFFF] shadow-[0px_-4px_8px_0px_#0000000F] h-[155px] w-full"
+      class="hidden md:!block bg-[#FFFFFF] shadow-[0px_-4px_8px_0px_#0000000F] h-[155px] w-full"
     >
       <div class="w-full">
         <div

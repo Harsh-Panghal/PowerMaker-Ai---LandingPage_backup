@@ -1,0 +1,97 @@
+{
+  "effectiveDate": "[Insert Date]",
+  "company": "Power Maker AI",
+  "intro": "Power Maker AI (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your personal information when you use our services, websites, and applications (collectively, the \u201cServices\u201d).",
+  "sections": [
+    {
+      "title": "Information We Collect",
+      "intro": "We collect the following types of information:",
+      "content": {
+        "InformationYouProvide": {
+          "AccountInformation": "name, email address, company details, and password.",
+          "ContactDetails": "when you contact us or request support.",
+          "PaymentInformation": "processed securely via third-party payment processors (we do not store your credit card details).",
+          "ContentYouSubmit": "including customizations, CRM configurations, or AI queries submitted via our platform."
+        },
+        "AutomaticallyCollectedInformation": {
+          "UsageData": "such as pages visited, features used, time spent, and interactions.",
+          "DeviceAndLogData": "IP address, browser type, operating system, and error logs.",
+          "Cookies": "to enhance functionality and user experience (see \u201cCookies\u201d below)."
+        }
+      }
+    },
+    {
+      "title": "How We Use Your Information",
+      "intro": "We use your information to:",
+      "uses": [
+        "Provide, maintain, and improve our Services;",
+        "Respond to your inquiries and support requests;",
+        "Send important updates, such as changes to terms or service status;",
+        "Analyze usage and trends to improve performance;",
+        "Detect and prevent fraud or misuse;",
+        "Comply with legal obligations."
+      ]
+    },
+    {
+      "title": "Sharing Your Information",
+      "intro": "We do not sell your personal information.",
+      "sub-intro":"We may share your information with:",
+      "uses": [
+        "<strong>Service providers</strong> who help operate our business (e.g., cloud hosting, analytics, payment processing); ",
+        "<strong>Legal authorities</strong> when required to comply with law, legal proceedings, or protect rights;",
+        "<strong>In case of business transfer,</strong> such as a merger or acquisition, your data may be transferred as part of the transaction."        
+      ]
+    },
+    {
+      "title": "Your Rights and Choices",
+      "intro": "Depending on your location, you may have rights to:",
+      "rights": [
+        "Access the information we hold about you;",
+        "Correct inaccurate or outdated data;",
+        "Delete your account or personal data;",
+        "Object to or restrict certain processing;",
+        "Withdraw consent where processing is based on consent."
+      ],
+      "content":"To exercise any of these rights, please contact us at [Insert contact email]."
+    },
+    {
+      "title": "Data Retention",
+      "content": "We retain your information for as long as necessary to provide the Services, comply with legal obligations, resolve disputes, and enforce our agreements. You may request deletion of your account or data at any time."
+    },
+    {
+      "title": "Security",
+      "content": "We implement industry-standard security measures to protect your personal data. However, no system is completely secure, and we cannot guarantee absolute security."
+    },
+    {
+      "title": "International Data Transfers",
+      "content": "Your data may be stored and processed in countries outside of your own, including where we or our service providers have operations. We take appropriate safeguards to protect your data in accordance with applicable laws."
+    },
+    {
+      "title": "Children\u2019s Privacy",
+      "content": "Our Services are not directed to individuals under the age of 13 (or the applicable age of digital consent in your region). We do not knowingly collect personal information from children."
+    },
+    {
+      "title": "Cookies",
+       "intro": "We use cookies and similar technologies to: ",
+      "uses": [
+        "Keep you logged in;",
+        "Understand usage patterns;",
+        "Improve performance;",
+        "Offer personalized features."
+      ],
+      "content": "You can control cookies through your browser settings."
+    },
+    {
+      "title": "Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time. We will notify you of significant changes through our Services or via email. Continued use of the Services means you agree to the updated policy."
+    },
+    {
+      "title": "Contact Us",
+      "intro": "If you have any questions about this Privacy Policy, please contact us at:",
+      "contact": {
+        "email": "[Insert contact email]",
+        "address": "[Insert business address]"
+      }
+    }
+  ]
+}

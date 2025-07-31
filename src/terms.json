@@ -1,10 +1,10 @@
 [
   {
-    "title": "Effective: 1st August 2025",
+    "effectiveDate": "1st August 2025",
     "body": "These Terms of Use (\u201cTerms\u201d) govern your access to, and use of the services, products, and applications (the \u201cServices\u201d) provided by Power Maker AI (\"we\", \"our\", or \"us\"). By using our Services, you agree to be bound by these Terms."
   },
   {
-    "title": "1. Your Use of the Services",
+    "title": "Your Use of the Services",
     "body": "You must use our Services in compliance with all applicable laws. You may not use the Services for any illegal, harmful, or abusive activity. This includes, but is not limited to:",
     "list": [
       "Violating any law or regulation;",
@@ -13,43 +13,43 @@
     ]
   },
   {
-    "title": "2. Registration and Access",
+    "title": "Registration and Access",
     "body": "To use certain features, you may need to register for an account. You must provide accurate and complete information during registration and keep it up to date. You are responsible for any activity that occurs under your account."
   },
   {
-    "title": "3. Content",
+    "title": "Content",
     "body": "You retain ownership of the content you submit to the Services. However, by submitting content, you grant us a worldwide, royalty-free license to use, host, store, reproduce, modify, and create derivative works as necessary to provide and improve our Services.\n\nWe may remove content that violates these Terms or applicable law."
   },
   {
-    "title": "4. Service Availability",
+    "title": "Service Availability",
     "body": "We are constantly improving our Services. We may add, modify, or remove features, and we may suspend or stop the Services entirely. We will provide reasonable notice when possible."
   },
   {
-    "title": "5. Fees and Payment",
+    "title": "Fees and Payment",
     "body": "Some features of the Services may require payment. All fees are clearly indicated at the time of purchase. You are responsible for all applicable taxes and fees associated with your use of the Services."
   },
   {
-    "title": "6. Termination",
+    "title": "Termination",
     "body": "We may suspend or terminate your access to the Services if you violate these Terms, create risk or legal exposure for us, or for any other reason, at our sole discretion. Upon termination, your right to use the Services will end immediately."
   },
   {
-    "title": "7. Disclaimers and Limitation of Liability",
+    "title": "Disclaimers and Limitation of Liability",
     "body": "We provide the Services \u201cas is\u201d and \u201cas available\u201d without warranties of any kind. We disclaim all warranties, express or implied, including the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.\n\nTo the fullest extent permitted by law, we are not liable for any indirect, incidental, special, or consequential damages, or loss of profits, revenues, or data."
   },
   {
-    "title": "8. Indemnity",
+    "title": "Indemnity",
     "body": "You agree to indemnify and hold harmless Power Maker AI and its affiliates, officers, agents, and employees from any claims, liabilities, damages, and expenses arising out of your use of the Services or your violation of these Terms."
   },
   {
-    "title": "9. Governing Law",
+    "title": "Governing Law",
     "body": "These Terms are governed by and construed in accordance with the laws of INDIA, without regard to conflict of law principles."
   },
   {
-    "title": "10. Changes to These Terms",
+    "title": "Changes to These Terms",
     "body": "We may update these Terms from time to time. If we make material changes, we will notify you through the Services or by other means. Continued use of the Services after the changes become effective constitutes your acceptance of the new Terms."
   },
   {
-    "title": "11. Contact",
+    "title": "Contact",
     "body": "If you have any questions about these Terms, please contact us at:\n\n<strong>Email:</strong> [Insert contact email]\n<strong>Address:</strong> [Insert company address]"
   }
 ]

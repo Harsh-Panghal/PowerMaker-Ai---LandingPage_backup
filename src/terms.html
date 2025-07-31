@@ -31,13 +31,18 @@
               roboto: ['Roboto', 'sans-serif'],
               satoshi: ['Satoshi', 'sans-serif'],
               inter: ['Inter', 'sans-serif'],
+              clash: ['Clash Grotesk', 'sans-serif'],
             },
 
           },
         },
       }
     </script>
+    <!-- custom css for tailwind -->
     <style type="text/tailwindcss">
+      * {
+        font-family: "Clash Grotesk", sans-serif;
+      }
       @layer utilities {
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
@@ -46,10 +51,31 @@
           scrollbar-width: none; /* Firefox */
           -ms-overflow-style: none; /* IE and Edge */
         }
+        /* Entire scrollbar */
+        ::-webkit-scrollbar {
+          width: 12px;
+        }
+
+        /* Track (background) */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+
+        /* Handle (thumb) */
+        ::-webkit-scrollbar-thumb {
+          background: rgba(10, 69, 108, 0.371);
+          border-radius: 10px;
+        }
+
+        /* On hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgb(10, 69, 108);
+        }
       }
     </style>
   </head>
-  <body class="font-['Roboto'] overflow-hidden">
+  <body class="overflow-hidden">
     <header>
       <nav class="!mt-[30px] !mx-[60px] flex justify-between items-center">
         <div
@@ -86,7 +112,7 @@
           </li>
           <li>
             <a
-              href="../../Documentation/index.html"
+              href="../Documentation/index.html"
               target="_blank"
               class="nav-link font-[510] text-[14px] text-[#81817C] hover:text-[#0E5185]"
               >Documentation</a

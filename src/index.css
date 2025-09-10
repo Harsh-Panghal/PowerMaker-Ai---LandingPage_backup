@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Neumorphism Light Theme Colors */
+    --background: 0 0% 96%; /* Off-White #F5F5F5 */
+    --foreground: 0 0% 29%; /* Dark Gray #4A4A4A */
+
+    --card: 0 0% 96%; /* Off-White #F5F5F5 */
+    --card-foreground: 0 0% 29%; /* Dark Gray #4A4A4A */
+
+    --popover: 0 0% 96%;
+    --popover-foreground: 0 0% 29%;
+
+    --primary: 214 78% 57%; /* Soft Blue #4A90E2 */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 88%; /* Light Gray #E0E0E0 */
+    --secondary-foreground: 0 0% 29%;
+
+    --muted: 0 0% 88%; /* Light Gray #E0E0E0 */
+    --muted-foreground: 0 0% 69%; /* Medium Gray #B0B0B0 */
+
+    --accent: 214 78% 57%; /* Soft Blue #4A90E2 */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 69%; /* Medium Gray #B0B0B0 */
+    --input: 0 0% 96%; /* Off-White #F5F5F5 */
+    --ring: 214 78% 57%;
+
+    /* Neumorphic specific colors */
+    --success: 214 78% 57%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 43 96% 56%;
+    --warning-foreground: 0 0% 29%;
+    
+    --neu-primary: 0 0% 96%; /* Off-White #F5F5F5 */
+    --neu-secondary: 0 0% 88%; /* Light Gray #E0E0E0 */
+    --neu-accent: 214 78% 57%; /* Soft Blue #4A90E2 */
+    --neu-accent-hover: 214 78% 66%; /* Brighter Blue #6AB0F3 */
+    
+    /* Neumorphic Gradients */
+    --gradient-neu-light: linear-gradient(145deg, hsl(0 0% 96%), hsl(0 0% 91%));
+    --gradient-neu-bg: linear-gradient(145deg, hsl(0 0% 96%), hsl(210 9% 91%));
+
+    /* Neumorphic Shadows */
+    --shadow-neu-raised: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    --shadow-neu-inset: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+    --shadow-neu-flat: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.7);
+
+    --radius: 12px;
+
+    --sidebar-background: 0 0% 96%;
+    --sidebar-foreground: 0 0% 29%;
+    --sidebar-primary: 214 78% 57%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 88%;
+    --sidebar-accent-foreground: 0 0% 29%;
+    --sidebar-border: 0 0% 69%;
+    --sidebar-ring: 214 78% 57%;
+  }
+
+  .dark {
+    /* Neumorphism Dark Theme Colors */
+    --background: 0 0% 16%; /* Dark Gray #2A2A2A */
+    --foreground: 0 0% 88%; /* Light Gray #E0E0E0 */
+
+    --card: 0 0% 16%; /* Dark Gray #2A2A2A */
+    --card-foreground: 0 0% 88%;
+
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 0% 88%;
+
+    --primary: 214 78% 57%; /* Soft Blue #4A90E2 */
+    --primary-foreground: 0 0% 96%;
+
+    --secondary: 0 0% 20%; /* Darker Gray */
+    --secondary-foreground: 0 0% 88%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 69%; /* Medium Gray #B0B0B0 */
+
+    --accent: 214 78% 57%; /* Soft Blue #4A90E2 */
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 96%;
+
+    --border: 0 0% 30%;
+    --input: 0 0% 16%;
+    --ring: 214 78% 57%;
+
+    /* Neumorphic Dark specific colors */
+    --neu-primary: 0 0% 16%; /* Dark Gray #2A2A2A */
+    --neu-secondary: 0 0% 12%; /* Darker #1E1E1E */
+    --neu-accent: 214 78% 57%; /* Soft Blue #4A90E2 */
+    --neu-accent-hover: 214 78% 66%; /* Brighter Blue #6AB0F3 */
+
+    /* Neumorphic Dark Gradients */
+    --gradient-neu-light: linear-gradient(145deg, hsl(0 0% 16%), hsl(0 0% 12%));
+    --gradient-neu-bg: linear-gradient(145deg, hsl(0 0% 16%), hsl(0 0% 12%));
+
+    /* Neumorphic Dark Shadows */
+    --shadow-neu-raised: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1);
+    --shadow-neu-inset: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+    --shadow-neu-flat: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.05);
+
+    --sidebar-background: 0 0% 16%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 214 78% 57%;
+    --sidebar-primary-foreground: 0 0% 96%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 88%;
+    --sidebar-border: 0 0% 30%;
+    --sidebar-ring: 214 78% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-neu-bg);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Neumorphic Base Classes */
+  .neu-card {
+    @apply bg-card rounded-xl;
+    box-shadow: var(--shadow-neu-raised);
+  }
+
+  .neu-button {
+    @apply rounded-xl transition-all duration-200;
+    box-shadow: var(--shadow-neu-flat);
+  }
+
+  .neu-button:hover {
+    box-shadow: var(--shadow-neu-raised);
+    transform: translateY(-1px);
+  }
+
+  .neu-button:active {
+    box-shadow: var(--shadow-neu-inset);
+    transform: translateY(0);
+  }
+
+  .neu-input {
+    @apply rounded-xl border-0;
+    box-shadow: var(--shadow-neu-inset);
+    background: var(--gradient-neu-light);
+  }
+
+  .neu-input:focus {
+    box-shadow: var(--shadow-neu-inset), 0 0 0 2px hsl(var(--accent) / 0.3);
+  }
+
+  .neu-container {
+    @apply rounded-xl;
+    background: var(--gradient-neu-light);
+    box-shadow: var(--shadow-neu-raised);
+  }
+
+  .neu-panel {
+    @apply rounded-xl border-0;
+    background: var(--gradient-neu-light);
+    box-shadow: var(--shadow-neu-flat);
+  }
+}
